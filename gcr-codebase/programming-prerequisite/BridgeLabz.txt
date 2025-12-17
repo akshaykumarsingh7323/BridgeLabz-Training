@@ -1,0 +1,17 @@
+public class BridgeLabz{
+   public static void main(String args[]){
+       System.out.println("Welcome to Bridgelabz!");
+   }
+} 
+
+
+
+
+
+
+
+
+
+
+
+Write a program that prints "Welcome to Bridgelabz!" to the screen.
