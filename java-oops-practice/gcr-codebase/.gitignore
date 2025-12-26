@@ -1,9 +1,9 @@
-/.metadata/
 
-#Eclipse soecific files
+
+#Eclipse specific files
 .metadata/
 .settings/
-.claspath
+.classpath
 .project
 
 #Java bulid output
