@@ -1,0 +1,11 @@
+/.metadata/
+
+#Eclipse soecific files
+.metadata/
+.settings/
+.claspath
+.project
+
+#Java bulid output
+bin/
+target/
