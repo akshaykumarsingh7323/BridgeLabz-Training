@@ -82,3 +82,41 @@ BridgeLabz-Training/
 
 ---
 
+###  Day 5 – Arrays & Basic Problem Solving  
+*(Date: 20-Dec-2025)*
+
+- Studied arrays in Java:
+  - Single-dimensional arrays
+  - Multi-dimensional arrays
+- Practiced array traversal and operations.
+- Solved problems related to:
+  - Finding missing elements
+  - Basic array-based logic
+- Strengthened logical thinking using array problems.
+- Committed and pushed solutions to the repository.
+
+🔗 *Code Link:*  
+👉 [Day 5 – Arrays](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays)
+
+---
+
+###  Day 6 – Strings & Methods  
+*(Date: 22-Dec-2025)*
+
+- Studied String concepts:
+  - String creation
+  - String methods
+  - Character processing
+- Implemented programs for string manipulation.
+- Studied Java methods:
+  - Method declaration
+  - Method calling
+  - Parameter passing
+- Practiced reusable logic using methods.
+- Committed and pushed solutions to the repository.
+
+🔗 *Code Link:*  
+👉 [Day 6 – Strings & Methods](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/string)
+
+---
+
