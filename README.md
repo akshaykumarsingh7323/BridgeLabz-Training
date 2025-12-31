@@ -141,3 +141,20 @@ _(Date: 23-Dec-2025)_
 👉 [Day 7 – Built-in Functions](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/extra)
 
 ---
+
+### Day 8 – Scenario-based problem
+
+_(Date: 24-Dec-2025)_
+
+- Practiced in leetcode.
+- Solved problem related to array.
+- Improved understanding of:
+  - Scenario-based questions.
+  - Real-world problems
+- Organized programs into proper folders.
+- Committed and pushed all changes successfully.
+
+🔗 _Code Link:_  
+👉 [Day 8 – Scenario-based problem ](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)
+
+---
