@@ -1,12 +1,13 @@
 ## BridgeLabz-Training
+
 ### 🗓 Day 1 – Git & GitHub Setup
 
 **(Date: 16-Dec-2025)**
 
-* Installed and configured Git on the local system.
-* Created and set up a GitHub repository for training work.
-* Understood the basic Git workflow and version control concepts.
-* Created the initial project folder structure as follows:
+- Installed and configured Git on the local system.
+- Created and set up a GitHub repository for training work.
+- Understood the basic Git workflow and version control concepts.
+- Created the initial project folder structure as follows:
 
 ```
 BridgeLabz-Training/
@@ -24,15 +25,14 @@ BridgeLabz-Training/
 │── README.md
 ```
 
-
 - Learned basic Git commands (`init`, `clone`, `add`, `commit`, `push`).
 - Successfully pushed files to the remote repository.
 
 ---
 
-### 📆 Day 2 – Git Practice & Basic Java Programs  
+### 📆 Day 2 – Git Practice & Basic Java Programs
 
-*(Date: 17-Dec-2025)*
+_(Date: 17-Dec-2025)_
 
 - Practiced Git workflow to understand version control.
 - Repeated add, commit, and push commands.
@@ -40,13 +40,14 @@ BridgeLabz-Training/
 - Organized Java programs inside the program-prerequisites folder.
 - Successfully committed and pushed the code to GitHub.
 
-🔗 *Code Link:*  
+🔗 _Code Link:_  
 👉 [Day 2 - program-prerequisite](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-prerequisite)
 
 ---
 
-###  Day 3 – Programming Elements in Java  
-*(Date: 18-Dec-2025)*
+### Day 3 – Programming Elements in Java
+
+_(Date: 18-Dec-2025)_
 
 - Studied Java programming elements:
   - Variables and data types
@@ -55,13 +56,14 @@ BridgeLabz-Training/
 - Solved practice problems based on programming elements.
 - Committed and pushed solutions to the repository.
 
-🔗 *Code Link:*  
+🔗 _Code Link:_  
 👉 [Day 3 – Programming Elements](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-elements)
 
 ---
 
-###  Day 4 – Control Flow & Logical Constructs  
-*(Date: 19-Dec-2025)*
+### Day 4 – Control Flow & Logical Constructs
+
+_(Date: 19-Dec-2025)_
 
 - Studied logical constructs in Java:
   - if, if-else
@@ -77,13 +79,14 @@ BridgeLabz-Training/
   - Prime number check
 - Committed and pushed solutions to the repository.
 
-🔗 *Code Link:*  
+🔗 _Code Link:_  
 👉 [Day 4 – Control Flow](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/control-flows)
 
 ---
 
-###  Day 5 – Arrays & Basic Problem Solving  
-*(Date: 20-Dec-2025)*
+### Day 5 – Arrays & Basic Problem Solving
+
+_(Date: 20-Dec-2025)_
 
 - Studied arrays in Java:
   - Single-dimensional arrays
@@ -95,13 +98,14 @@ BridgeLabz-Training/
 - Strengthened logical thinking using array problems.
 - Committed and pushed solutions to the repository.
 
-🔗 *Code Link:*  
+🔗 _Code Link:_  
 👉 [Day 5 – Arrays](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays)
 
 ---
 
-###  Day 6 – Strings & Methods  
-*(Date: 22-Dec-2025)*
+### Day 6 – Strings & Methods
+
+_(Date: 22-Dec-2025)_
 
 - Studied String concepts:
   - String creation
@@ -115,8 +119,25 @@ BridgeLabz-Training/
 - Practiced reusable logic using methods.
 - Committed and pushed solutions to the repository.
 
-🔗 *Code Link:*  
+🔗 _Code Link:_  
 👉 [Day 6 – Strings & Methods](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/string)
 
 ---
 
+### Day 7 – Built-in Functions & Extra Practice
+
+_(Date: 23-Dec-2025)_
+
+- Practiced Java built-in functions.
+- Implemented utility programs such as:
+  - Temperature Converter
+- Improved understanding of:
+  - Input handling
+  - Type conversion
+- Organized programs into proper folders.
+- Committed and pushed all changes successfully.
+
+🔗 _Code Link:_  
+👉 [Day 7 – Built-in Functions](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/extra)
+
+---
