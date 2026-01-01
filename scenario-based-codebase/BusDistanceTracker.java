@@ -44,7 +44,7 @@ public class BusDistanceTracker{
 			}
 			System.out.println("");
 		}
-		    System.out.println("Distance Covered: " + "Rs " + totalDistance);
+		    System.out.println("Distance Covered: " + "Rs " + totalDistance + "km");
 			System.out.println("Total Fare: " + "Rs " + totalCost);
 			
 			System.out.println("\n-----------");
