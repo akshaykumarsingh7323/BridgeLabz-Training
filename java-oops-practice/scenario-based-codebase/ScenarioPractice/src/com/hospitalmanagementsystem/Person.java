@@ -1,4 +1,4 @@
-package com.hospitalmanagementmanagementsystem;
+package com.hospitalmanagementsystem;
 
 public abstract class Person implements HospitalService {
 

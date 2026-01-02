@@ -1,4 +1,4 @@
-package com.hospitalmanagementmanagementsystem;
+package com.hospitalmanagementsystem;
 
 public class Doctor extends Person {
 

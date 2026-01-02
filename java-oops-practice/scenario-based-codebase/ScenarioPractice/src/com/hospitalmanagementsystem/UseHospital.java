@@ -1,4 +1,4 @@
-package com.hospitalmanagementmanagementsystem;
+package com.hospitalmanagementsystem;
 
 public class UseHospital {
     public static void main(String[] args) {

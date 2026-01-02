@@ -1,4 +1,4 @@
-package com.hospitalmanagementmanagementsystem;
+package com.hospitalmanagementsystem;
 
 public interface HospitalService {
     void showDetails();
