@@ -162,16 +162,31 @@ _(Date: 24-Dec-2025)_
 ### Day 9 – Scenario-based problem
 (Date: 26-Dec-2025)
 
-Practiced in Leetcode.
-Solved problem related to
-String
-Improved understanding of:
-Scenario-based question
-like ReportCard Generator, Pooling Booth Manager, 
+- Practiced in Leetcode.
+- Solved problem related to
+  - String
+- Improved understanding of:
+- Scenario-based question
+- like ReportCard Generator, Pooling Booth Manager, 
 Committed and pushed all changes successfully.
 
 🔗 _Code Link:_
-👉  [Day 9 - Scenario-base-problem ](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)	
+- 👉  [Day 9 - Scenario-base-problem](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)	
+
+
+---
+
+### Day 10 – Scenario-based problem 
+(Date: 29-Dec-2025)
+
+- Solved problem related to
+  - Array
+- Improved understanding of:
+- Scenario-based question
+- like ReportCard Generator, Pooling Booth Manager
+- Committed and pushed all changes successfully.
+🔗 Code Link:
+- 👉 [Day 10 – Scenario-based problem](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)
 
 
 ---
