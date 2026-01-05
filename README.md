@@ -170,8 +170,7 @@ Scenario-based question
 like ReportCard Generator, Pooling Booth Manager
 Committed and pushed all changes successfully.
 🔗 _Code Link:_
-    [Day 9 - Scenario-base-problem	
-Day 9 – Scenario-based problem
+    [Day 9 - Scenario-base-problem ](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)	
 
 
 ---
