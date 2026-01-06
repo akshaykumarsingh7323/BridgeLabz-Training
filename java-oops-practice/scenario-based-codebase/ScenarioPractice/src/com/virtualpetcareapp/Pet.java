@@ -60,11 +60,11 @@ public abstract class Pet implements IInteractable {
 
     private void updateMood() {
         if (energy > 70 && hunger < 30)
-            mood = "Happy 😊";
+            mood = "Happy";
         else if (hunger > 70)
-            mood = "Hungry 😟";
+            mood = "Hungry";
         else
-            mood = "Normal 🙂";
+            mood = "Normal";
     }
 
     public void showStatus() {
