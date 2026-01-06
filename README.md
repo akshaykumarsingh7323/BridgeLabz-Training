@@ -1,5 +1,7 @@
 # BridgeLabz-Training
 
+#### Week 1 : Java Core Programming
+
 ### 🗓 Day 1 – Git & GitHub Setup
 
 **(Date: 16-Dec-2025)**
@@ -42,5 +44,21 @@ _(Date: 17-Dec-2025)_
 
 🔗 _Code Link:_  
 👉 [Day 2 - program-prerequisite](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-prerequisite)
+
+---
+
+### Day 3 – Programming Elements in Java
+
+_(Date: 18-Dec-2025)_
+
+- Studied Java programming elements:
+  - Variables and data types
+  - Operators
+  - User input and output
+- Solved practice problems based on programming elements.
+- Committed and pushed solutions to the repository.
+
+🔗 _Code Link:_  
+👉 [Day 3 – Programming Elements](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-elements)
 
 ---
