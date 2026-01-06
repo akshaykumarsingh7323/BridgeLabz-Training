@@ -1,6 +1,6 @@
 # BridgeLabz-Training
 
-#### Week 1 : Java Core Programming
+## Week 01 - Java Core Programming
 
 ### 🗓 Day 1 – Git & GitHub Setup
 
@@ -60,5 +60,28 @@ _(Date: 18-Dec-2025)_
 
 🔗 _Code Link:_  
 👉 [Day 3 – Programming Elements](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-elements)
+
+---
+
+### Day 4 – Control Flow & Logical Constructs
+
+_(Date: 19-Dec-2025)_
+
+- Studied logical constructs in Java:
+  - if, if-else
+  - switch statement
+  - ternary operator
+- Practiced iteration statements:
+  - for loop
+  - while loop
+  - do-while loop
+- Used break and continue statements.
+- Solved logical problems such as:
+  - Factorial
+  - Prime number check
+- Committed and pushed solutions to the repository.
+
+🔗 _Code Link:_  
+👉 [Day 4 – Control Flow](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/control-flows)
 
 ---
