@@ -27,3 +27,20 @@ BridgeLabz-Training/
 
 - Learned basic Git commands (`init`, `clone`, `add`, `commit`, `push`).
 - Successfully pushed files to the remote repository.
+
+---
+
+### 📆 Day 2 – Git Practice & Basic Java Programs
+
+_(Date: 17-Dec-2025)_
+
+- Practiced Git workflow to understand version control.
+- Repeated add, commit, and push commands.
+- Solved basic Java programs to understand syntax and structure.
+- Organized Java programs inside the program-prerequisites folder.
+- Successfully committed and pushed the code to GitHub.
+
+🔗 _Code Link:_  
+👉 [Day 2 - program-prerequisite](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-prerequisite)
+
+---
