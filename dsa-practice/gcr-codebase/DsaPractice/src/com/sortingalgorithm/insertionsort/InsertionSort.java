@@ -31,8 +31,8 @@ public class InsertionSort{
     }
 
     public static void printArray(int[] arr) {
-        for (int id : arr) {
-            System.out.print(id + " ");
+        for(int id : arr) {
+           System.out.print(id + " ");
         }
         System.out.println();
     }
