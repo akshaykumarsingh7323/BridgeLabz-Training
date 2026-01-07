@@ -3,19 +3,21 @@ package com.linearandbinarysearch;
 import java.util.Scanner;
 
 public class FindRotationPoint {
-	static int findRotationPoint(int arr []) {
-		int start = 0;
-		int end = arr.length - 1;
-		
-		while(start <= end) {
-			int mid = (start + end) / 2;
-			if(arr[mid] > arr[start] && arr[start] > arr[end]) start = mid + 1;
-			else if(arr[mid] == arr[start] && arr[start] > arr[end]) 	start = mid + 1;
-			else if(arr[start] > arr[mid] && arr[mid] < arr[end]) end = mid;
-			else end = mid - 1;
-		}
-		return start;
-	}
+	 public static int findRotationPoint(int[] arr) {
+	        int left = 0;
+	        int right = arr.length - 1;
+
+	        while (left < right) {
+	            int mid = left + (right - left) / 2;
+
+	            if (arr[mid] > arr[right]) {
+	                left = mid + 1;
+	            } else {
+	                right = mid;
+	            }
+	        }
+	        return left;
+	    }
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
