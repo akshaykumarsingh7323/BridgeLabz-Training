@@ -179,3 +179,23 @@ _(Date: 26-Dec-2025)_
 
 🔗 _Code Link:_
 👉 [Consructor](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcetps/src/com/constructor/level1)
+
+---
+
+### 🗓 Day 3 – This, Static, Final keywords and Instanceof operator Content & Scenario-based problem
+
+(Date: 29-Dec-2025)
+
+- Studied about This, Static keywords
+- Studied the Final keywords
+- Solved logical problems such as
+  - Bank Account System, Library Management System, Employee Management System
+- Solved problem related to
+  - Array
+- Improved understanding of:
+  - Scenario-based question
+  - like ReportCard Generator, Pooling Booth Manager
+- Committed and pushed all changes successfully.
+
+🔗 _Code Link:_
+👉 [static and final keywords](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcetps/src/com/staticandfinal/level1)
