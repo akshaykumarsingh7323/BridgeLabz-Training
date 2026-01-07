@@ -102,3 +102,26 @@ _(Date: 20-Dec-2025)_
 
 🔗 _Code Link:_  
 👉 [Day 5 – Arrays](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays)
+
+---
+
+### Day 6 – Strings & Methods
+
+_(Date: 22-Dec-2025)_
+
+- Studied String concepts:
+  - String creation
+  - String methods
+  - Character processing
+- Implemented programs for string manipulation.
+- Studied Java methods:
+  - Method declaration
+  - Method calling
+  - Parameter passing
+- Practiced reusable logic using methods.
+- Committed and pushed solutions to the repository.
+
+🔗 _Code Link:_  
+👉 [Day 6 – Strings & Methods](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/string)
+
+---
