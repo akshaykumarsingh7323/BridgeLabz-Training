@@ -299,3 +299,26 @@ _(Date: 26-Dec-2025)_
 
 🔗 _Code Link:_  
 👉[Stack and Queue](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/stacksandqueues)
+👉[HashMap](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/hashmapandhashfunction)
+
+---
+
+### Day 3 – Sorting Algorithms
+
+**(Date: 05-Jan-2026)**
+
+- Introduction to Sorting algorithms
+- Some sorting algorithms
+  - Bubble sort
+  - Insertion sort
+  - Selection Sort
+  - Heap sort
+  - Merge sort
+  - quick sort
+- Solved practice problems based on programming elements.
+- Committed and pushed solutions to the repository.
+
+🔗 _Code Link:_  
+👉 [Sorting Algorithms](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/sortingalgorithm)
+
+---
