@@ -77,3 +77,23 @@ _(Date: 26-Dec-2025)_
 - 👉 [Class Diagram](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcetps/src/com/objectdiagram)
 
 ---
+
+### 🗓 Day 5 - Inheritance, Encapsulation, Polymorphism, Interface, Abstract Classes, Scenario based problem(core-java) Scenario-based problem(oops)
+
+**(Date: 01-Jan-2026)**
+
+- Studied the Inheritance
+- Solved logical problems such as
+  - Vehicle Management System, School System
+- Studied the Encapsulation, Polymorphism, Interface & Abstract Classes
+- Solved Scenario based problem(corejava)
+  - Bank Management System
+- Solved problem related to Array
+- Improved understanding of Scenario-based question(oops)
+  - like Coffee Counter
+- Committed and pushed solutions to the repository
+
+🔗 _Code Link:_  
+👉 [Inheritance](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcetps/src/com/inheritence)
+
+---
