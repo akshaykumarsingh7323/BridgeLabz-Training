@@ -97,3 +97,19 @@ _(Date: 26-Dec-2025)_
 👉 [Inheritance](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcetps/src/com/inheritence)
 
 ---
+
+### 🗓 Day 6 - Encapsulation, Polymorphism, Interface & Abstract Classes
+
+**(Date: 02-Jan-2026)**
+
+- Studied the Encapsulation, Polymorphism, Interface & Abstract Classes
+- Solved logical problems such as
+  - Banking System, Hospital Management System
+- Solved Scenario based problem
+  - E-Wallet Application
+- Committed and pushed solutions to the repository
+
+🔗 _Code Link:_  
+👉 [Encapsulation, Interface, Abstract class and Polymorphism](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcetps/src/com/encapsulation)
+
+---
