@@ -168,7 +168,7 @@ _(Date: 26-Dec-2025)_
 
 ### 🗓 Day 2 - Java Constructors, Instance vs. Class Variables, Access Modifiers Concepts
 
-(Date: 27-Dec-2025)
+**(Date: 27-Dec-2025)**
 
 - Studied the Constructors concept
 - Studied the Instance vs. Class Variables
@@ -184,7 +184,7 @@ _(Date: 26-Dec-2025)_
 
 ### 🗓 Day 3 – This, Static, Final keywords and Instanceof operator Content & Scenario-based problem
 
-(Date: 29-Dec-2025)
+**(Date: 29-Dec-2025)**
 
 - Studied about This, Static keywords
 - Studied the Final keywords
@@ -204,7 +204,7 @@ _(Date: 26-Dec-2025)_
 
 ### 🗓 Day 4 - Object Modeling, Class Diagram
 
-(Date: 30-Dec-2025)
+**(Date: 30-Dec-2025)**
 
 - Studied the Object Modeling
 - Studied the Class Diagram
@@ -226,7 +226,7 @@ _(Date: 26-Dec-2025)_
 
 ### 🗓 Day 5 - Inheritance, Encapsulation, Polymorphism, Interface, Abstract Classes, Scenario based problem(core-java) Scenario-based problem(oops)
 
-(Date: 01-Jan-2026)
+**(Date: 01-Jan-2026)**
 
 - Studied the Inheritance
 - Solved logical problems such as
@@ -246,7 +246,7 @@ _(Date: 26-Dec-2025)_
 
 ### 🗓 Day 6 - Encapsulation, Polymorphism, Interface & Abstract Classes
 
-(Date: 02-Jan-2026)
+**(Date: 02-Jan-2026)**
 
 - Studied the Encapsulation, Polymorphism, Interface & Abstract Classes
 - Solved logical problems such as
@@ -260,9 +260,9 @@ _(Date: 26-Dec-2025)_
 
 ---
 
-## Week 01 - Data structure & Algorithms
+## Week 03 - Data structure & Algorithms
 
-### Day 3 – Programming Elements in Java
+### Day 1 – Data Structure & Introduction
 
 (Date: 03-Jan-2026)
 
@@ -275,3 +275,27 @@ _(Date: 26-Dec-2025)_
 
 🔗 _Code Link:_  
 👉 [Linked List](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/linkedlist)
+
+---
+
+### Day 2 – Stack, Queue, HashMap and Hashing Function
+
+**(Date: 04-Jan-2026)**
+
+- Stack
+  - push()
+  - pop()
+  - peek()
+  - isEmpty()
+- Queue
+  - Enqueue
+  - Dequeue
+  - Simple Queue
+  - PriorityQueue
+  - Deque
+- HashMap and Hashing Function
+- Solved practice problems based on programming elements.
+- Committed and pushed solutions to the repository
+
+🔗 _Code Link:_  
+👉[Stack and Queue](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/stacksandqueues)
