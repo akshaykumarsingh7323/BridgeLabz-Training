@@ -257,3 +257,21 @@ _(Date: 26-Dec-2025)_
 
 🔗 _Code Link:_  
 👉 [Encapsulation, Interface, Abstract class and Polymorphism](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcetps/src/com/encapsulation)
+
+---
+
+## Week 01 - Data structure & Algorithms
+
+### Day 3 – Programming Elements in Java
+
+(Date: 03-Jan-2026)
+
+- Introduction of Data Structure
+- Key Features of Data Structures in Java
+- Types of Data Structures in Java
+- Single Linked List
+- Double Linked List
+- Circular Linked List
+
+🔗 _Code Link:_  
+👉 [Linked List](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/linkedlist)
