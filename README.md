@@ -55,3 +55,25 @@ _(Date: 26-Dec-2025)_
 👉 [static and final keywords](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcetps/src/com/staticandfinal/level1)
 
 ---
+
+### 🗓 Day 4 - Object Modeling, Class Diagram
+
+**(Date: 30-Dec-2025)**
+
+- Studied the Object Modeling
+- Studied the Class Diagram
+- Solved logical problems such as
+  - Bank Account System, Library Management System
+- Solved problem related to
+  - String
+- Improved understanding of:
+  - Scenario-based question
+    -like Train Reservation System, Movie Ticket Booking System
+- Committed and pushed solutions to the repository
+
+🔗 _Code Link:_
+
+- 👉 [Object Modeling](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcetps/src/com/objectmodeling)
+- 👉 [Class Diagram](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcetps/src/com/objectdiagram)
+
+---
