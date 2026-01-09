@@ -2,7 +2,7 @@ package com.linearandbinarysearch;
 
 import java.util.Scanner;
 
-public class SearchSpecificWord {
+public class SearchSpecificWordUsingBinarySearch {
 	static String checkSpecificWord(String str[], String word, boolean found) {
 		for(String sentence : str) {
 			if(sentence.contains(word)) {
