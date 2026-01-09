@@ -2,7 +2,7 @@ package com.linearandbinarysearch;
 
 import java.util.Scanner;
 
-public class SearchFirstNegative {
+public class SearchFirstNegativeUsingLinearSearch {
 	
 	static int checkNumber(int arr []) {
 		for(int i = 0; i < arr.length; i++) {
