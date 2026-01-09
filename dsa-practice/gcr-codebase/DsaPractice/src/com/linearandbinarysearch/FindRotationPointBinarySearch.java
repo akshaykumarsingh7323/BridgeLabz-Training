@@ -2,7 +2,7 @@ package com.linearandbinarysearch;
 
 import java.util.Scanner;
 
-public class FindRotationPoint {
+public class FindRotationPointBinarySearch {
 	 public static int findRotationPoint(int[] arr) {
 	        int left = 0;
 	        int right = arr.length - 1;
