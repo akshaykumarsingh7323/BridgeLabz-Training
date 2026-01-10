@@ -1,11 +1,16 @@
 package com.filereader;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class ReadFileLineByLine {
     public static void main(String[] args) {
+    	Scanner sc = new Scanner(System.in);
+    	System.out.println("Enter path: ");
+    	String input = sc.nextLine();
+    	
         try {
-            FileReader fileReader = new FileReader("input.txt");
+            FileReader fileReader = new FileReader(input);
 
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
