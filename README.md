@@ -325,7 +325,7 @@ _(Date: 26-Dec-2025)_
 
 ### Day 4 & 5 – Linear and Binary Search
 
-**(Date: 05-Jan-2026)**
+**(Date: 06-Jan-2026)**
 
 - Introduction to Sorting algorithms
 - Some topic covered:
