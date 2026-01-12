@@ -340,10 +340,11 @@ _(Date: 26-Dec-2025)_
 - Solved practice problems based on programming elements.
 - Committed and pushed solutions to the repository.
 
-🔗 _Code Link:_  
-👉 [Linear and Binary Search](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/linearandbinarysearch)
-👉 [StringBuffer and StringBuilder](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/stringbufferandstringbuilder)
-👉 [FileReader]https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/filereader()
-👉 [InputStreamReader](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/inputstreamreader)
+🔗 _Code Link:_
+
+- 👉 [Linear and Binary Search](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/linearandbinarysearch)
+- 👉 [StringBuffer and StringBuilder](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/stringbufferandstringbuilder)
+- 👉 [FileReader](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/filereader)
+- 👉 [InputStreamReader](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/inputstreamreader)
 
 ---
