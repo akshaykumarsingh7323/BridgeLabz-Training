@@ -322,3 +322,28 @@ _(Date: 26-Dec-2025)_
 👉 [Sorting Algorithms](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/sortingalgorithm)
 
 ---
+
+### Day 4 & 5 – Linear and Binary Search
+
+**(Date: 05-Jan-2026)**
+
+- Introduction to Sorting algorithms
+- Some topic covered:
+
+  - StringBuilder
+  - StringBuffer
+  - FileReader
+  - InputStreamReader
+  - Linear Search
+  - Binary Search
+
+- Solved practice problems based on programming elements.
+- Committed and pushed solutions to the repository.
+
+🔗 _Code Link:_  
+👉 [Linear and Binary Search](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/linearandbinarysearch)
+👉 [StringBuffer and StringBuilder](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/stringbufferandstringbuilder)
+👉 [FileReader]https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/filereader()
+👉 [InputStreamReader](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/inputstreamreader)
+
+---
