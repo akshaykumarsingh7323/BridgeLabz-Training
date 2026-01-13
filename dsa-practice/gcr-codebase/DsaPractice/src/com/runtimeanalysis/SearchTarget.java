@@ -48,16 +48,20 @@ public class SearchTarget {
 		boolean linearResult = linearSearch(arr, target);
 		long endLinear = System.nanoTime();
 		long linearTime = endLinear - startLinear;
+		
 		if(linearResult) System.out.println("Target found in linear search");
 		else System.out.println("Target not found in linear search");
+		
  		System.out.println("Linear Time: " + linearTime);
 		
 		long startBinary = System.nanoTime();
 		boolean binaryResult = binarySearch(arr, target);
 		long endBinary = System.nanoTime();
 		long binaryTime = endBinary - startBinary;
+		
 		if(binaryResult) System.out.println("Target found in binary search");
 		else System.out.println("Target not 19ound in binary search");
+		
 		System.out.println("Binary Time: " + binaryTime);
 	}
 }
