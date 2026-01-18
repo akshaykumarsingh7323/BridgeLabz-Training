@@ -84,3 +84,23 @@
 - 👉 [InputStreamReader](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/inputstreamreader)
 
 ---
+
+### Day 6 – Algorithm's Runtime Analysis & Big-O Notation
+
+**(Date: 07-Jan-2026)**
+
+- What is Runtime Analysis?
+- Understanding Big-O Notation
+- Time Complexity Analysis
+- Space Complexity Analysis
+- Best, Worst, and Average Case Complexities
+- Practical Guidelines for Optimizing Java Code
+- Solved Scenario-based problems
+  - LoanBuddy
+  - BookBazzar
+- Committed and pushed solutions to the repository.
+
+🔗 _Code Link:_  
+👉 [Algorithm's Runtime Analysis](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/runtimeanalysis)
+
+---
