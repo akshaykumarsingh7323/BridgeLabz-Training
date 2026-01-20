@@ -25,7 +25,7 @@ public class UseEduResult {
 
         MergeSort.mergeSort(students, 0, n - 1);
 
-        System.out.println("\nState-wise Rank List:");
+        System.out.println("\nState wise Rank List:");
         int rank = 1;
         for (Student s : students) {
             System.out.println("Rank " + rank++ + ": " + s.name + " - " + s.marks);
