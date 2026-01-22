@@ -21,7 +21,7 @@ public class ReverseList {
 	}
 	public static void main(String[] args) {
 		
-		System.out.println("-------- ArrayList ---------\n");
+		System.out.println("-------- ArrayList --------\n");
 		List <Integer> arraylist = new ArrayList<>();
 		arraylist.add(1);
 		arraylist.add(2);
@@ -32,7 +32,7 @@ public class ReverseList {
 		reverse(arraylist);
 		System.out.println("Reverse ArrayList: " + arraylist);
 		
-		System.out.println("\n-------- LinkedList ---------\n");
+		System.out.println("\n-------- LinkedList --------\n");
 		List <Integer> linkedlist = new LinkedList<>();
 		linkedlist.add(1);
 		linkedlist.add(2);
