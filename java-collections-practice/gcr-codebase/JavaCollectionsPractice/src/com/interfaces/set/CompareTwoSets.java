@@ -23,7 +23,7 @@ public class CompareTwoSets {
 		System.out.println("Enter " + n + " element for set 2: ");
 		for(int i = 0; i < n; i++) {
 			set2.add(sc.nextInt());
-		};
+		}
 		
 		if(set1.size() == set2.size() && set1.containsAll(set2)) {
 			System.out.println("Set is equal");
