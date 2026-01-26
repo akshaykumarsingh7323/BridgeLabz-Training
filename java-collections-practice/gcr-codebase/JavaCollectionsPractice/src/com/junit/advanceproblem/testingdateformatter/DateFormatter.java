@@ -1,4 +1,4 @@
-package com.junit.advanceproblem.testingdateformater;
+package com.junit.advanceproblem.testingdateformatter;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
