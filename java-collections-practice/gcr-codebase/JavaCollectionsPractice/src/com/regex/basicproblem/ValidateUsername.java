@@ -1,4 +1,4 @@
-package com.regex;
+package com.regex.basicproblem;
 
 public class ValidateUsername {
 
