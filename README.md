@@ -120,3 +120,19 @@
 👉 [Day 08 – Data Structure Scenario based problem solving](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
 
 ---
+
+### 🗓 Day 09 – Data Structure Scenario based problem solving
+
+**(Date: 12-Jan-2026)**
+
+- Real-world scenario-based problems
+  - CallCenter – Customer Queue Manager (Queue + HashMap)
+  - TrainCompanion – Compartment Navigation System (Doubly LinkedList)
+  - TextEditor – Undo/Redo Functionality (Stack)
+- Time and space Complexity Optimization.
+- Committed and pushed solutions to the repository.
+
+🔗 **Code Link:**  
+👉 [Day 09 – Data Structure Scenario based problem solving](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+---
