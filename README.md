@@ -368,3 +368,21 @@ _(Date: 26-Dec-2025)_
 👉 [Algorithm's Runtime Analysis](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DsaPractice/src/com/runtimeanalysis)
 
 ---
+
+## Week 04 - Java Collections, Streams
+
+### Day 1 – Java Generics
+
+**(Date: 09-Jan-2026)**
+
+- Introduction to Generics
+- Type Parameters
+- Generic Classes
+- Generic Methods
+- Bounded Type Parameters
+- Wildcards
+
+🔗 _Code Link:_  
+👉 [Java Generics](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsPractice/src/com/generics)
+
+---
