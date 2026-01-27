@@ -4,7 +4,8 @@ import java.lang.reflect.*;
 import java.util.Scanner;
 
 public class ClassInformation {
-
+	int a;
+	int b;
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
