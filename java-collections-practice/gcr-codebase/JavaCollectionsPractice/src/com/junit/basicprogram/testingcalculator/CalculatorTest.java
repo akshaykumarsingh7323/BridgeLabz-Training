@@ -27,7 +27,6 @@ public class CalculatorTest {
         assertEquals(4, calc.divide(20, 5));
     }
 
-    // ✅ Bonus: division by zero
     @Test
     void testDivideByZero() {
         assertThrows(ArithmeticException.class, () -> {
