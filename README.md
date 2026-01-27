@@ -203,3 +203,27 @@
 👉 [Day 13 – Sorting Scenario based problem solving](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com/sorting)
 
 ---
+
+### 🗓 Day 14 – Sorting scenario based problem solving and Learned Tree Basics
+
+**(Date: 19-Jan-2026)**
+
+- Real-world scenario-based problems involving sorting algorithms(Bubble Sort, Insertion Sort, Merge Sort)
+  - EduResults – Rank Sheet Generator (Merge Sort)
+  - FlashDealz – Product Sorting by Discount (Quick Sort)
+  - FitnessTracker – Daily Step Count Ranking (Bubble Sort)
+- Practiced Scenario based questions of sorting algorithms
+
+- Introduction to Trees and Basic Terminologies
+
+  - Tree Representation
+  - Tree Traversal Algorithms
+  - Binary Search Trees (BST)
+  - Practiced tree basic questions
+
+- Committed and pushed solutions to the repository.
+
+🔗 **Code Link:**  
+👉 [Day 14 – Sorting Scenario based problem solving](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com/sorting)
+
+---
