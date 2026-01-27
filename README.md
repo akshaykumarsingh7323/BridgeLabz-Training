@@ -227,3 +227,29 @@
 👉 [Day 14 – Sorting Scenario based problem solving](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com/sorting)
 
 ---
+
+### 🗓 Day 15 – Sorting scenario based problem solving and Learned Graph Data structure Basics
+
+**(Date: 20-Jan-2026)**
+
+- Real-world scenario-based problems involving sorting algorithms(Bubble Sort, Insertion Sort, Merge Sort)
+  - MovieTime – Theater Show Listings (Insertion Sort)
+  - FoodFest – Sorting Stalls by Customer Footfall (Merge Sort)
+  - GamerZone – High Score Ranking System (Quick Sort)
+- Practiced Scenario based questions of sorting algorithms
+
+- Introduction to Graph and Basic Terminologies
+
+  - Introduction to Graphs
+  - Graph Representation
+  - Graph Traversal Algorithms
+  - Depth-First Search (DFS)
+  - Breadth-First Search (BFS)
+  - DFS vs BFS Comparison
+
+- Committed and pushed solutions to the repository.
+
+🔗 **Code Link:**  
+👉 [Day 15 – Sorting Scenario based problem solving](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com/sorting)
+
+---
