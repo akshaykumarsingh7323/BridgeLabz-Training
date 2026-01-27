@@ -1,4 +1,4 @@
-package com.reflection.basiclevel;
+package com.reflection.intermediatelevel;
 
 import java.lang.reflect.Method;
 import java.util.Scanner;
