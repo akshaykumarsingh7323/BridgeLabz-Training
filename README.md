@@ -54,3 +54,24 @@
 👉 [Java I/O Streams](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsPractice/src/com/javastream)
 
 ---
+
+### Day 04 – Exceptions
+
+**(Date: 20-Jan-2026)**
+
+- Types of Exceptions
+  - Checked Exceptions,
+  - Unchecked Exceptions
+  - Custom Exceptions
+- Handling Exceptions
+  - try-catch blocks
+  - try-catch-finally blocks
+  - try-with-resources statement
+  - throws clause
+  - throw statement
+- Creating Custom Exceptions
+- Extending Exception Class
+- Defining Constructors
+
+🔗 _Code Link:_  
+👉 [Exceptions](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsPractice/src/com/exceptions)
