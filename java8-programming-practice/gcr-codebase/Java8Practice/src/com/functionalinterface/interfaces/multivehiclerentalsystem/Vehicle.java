@@ -1,4 +1,4 @@
-package com.functionalinterface.multivehiclerentalsystem;
+package com.functionalinterface.interfaces.multivehiclerentalsystem;
 
 public interface Vehicle {
     void rent();
