@@ -36,3 +36,21 @@
 👉 [Collection](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsPractice/src/com/interfaces)
 
 ---
+
+### Day 03 – Java I/O Streams
+
+**(Date: 19-Jan-2026)**
+
+- Java I/O Streams
+- Types of Streams
+  - File Streams
+  - Object Streams
+  - ByteArray Streams
+  - Buffered Streams
+  - Reader and Writer
+- Key Considerations
+
+🔗 _Code Link:_  
+👉 [Java I/O Streams](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsPractice/src/com/javastream)
+
+---
