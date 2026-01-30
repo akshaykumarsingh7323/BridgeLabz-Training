@@ -17,3 +17,22 @@
 👉 [Java Generics](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsPractice/src/com/generics)
 
 ---
+
+### Day 02 – Collections
+
+**(Date: 16-Jan-2026)**
+
+- Overview of Collections Framework
+- What is the Collections Framework?
+- Hierarchy of Collections Framework
+- List Interface and Implementing Classes
+- Set Interface and Implementing Classes
+- Queue and Deque Interfaces
+- Map Interface and Its Implementations
+- Comparison of Different Implementations
+- Real-World Use Cases and Best Practices.
+
+🔗 _Code Link:_  
+👉 [Collection](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsPractice/src/com/interfaces)
+
+---
