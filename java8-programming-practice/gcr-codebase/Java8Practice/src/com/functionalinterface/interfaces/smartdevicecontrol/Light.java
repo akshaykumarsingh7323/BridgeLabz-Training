@@ -1,4 +1,4 @@
-package com.functionalinterface.smartdevicecontrol;
+package com.functionalinterface.interfaces.smartdevicecontrol;
 
 public class Light implements DeviceAction {
 
