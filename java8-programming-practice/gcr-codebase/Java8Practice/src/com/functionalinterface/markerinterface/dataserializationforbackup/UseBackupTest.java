@@ -1,4 +1,4 @@
-package com.functionalinterface.markerinterface.Dataserializationforbackup;
+package com.functionalinterface.markerinterface.dataserializationforbackup;
 
 public class UseBackupTest {
 

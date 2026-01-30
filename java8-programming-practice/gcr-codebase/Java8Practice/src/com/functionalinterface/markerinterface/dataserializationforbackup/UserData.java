@@ -1,4 +1,4 @@
-package com.functionalinterface.markerinterface.Dataserializationforbackup;
+package com.functionalinterface.markerinterface.dataserializationforbackup;
 
 class UserData implements BackupSerializable {
 
