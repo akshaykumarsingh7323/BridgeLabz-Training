@@ -1,0 +1,14 @@
+package com.lambdaexpression.functionalinterface;
+
+public class TV implements DeviceAction {
+
+    @Override
+    public void turnOn() {
+        System.out.println("TV is turned ON");
+    }
+
+    @Override
+    public void turnOff() {
+        System.out.println("TV is turned OFF");
+    }
+}
