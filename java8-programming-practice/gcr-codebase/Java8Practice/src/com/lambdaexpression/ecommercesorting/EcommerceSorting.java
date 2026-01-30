@@ -15,18 +15,18 @@ public class EcommerceSorting {
 
         // Sort by Price
         products.sort((p1, p2) -> Double.compare(p1.price, p2.price));
-        System.out.println("Sorted by Price:");
+        System.out.println("---------------- Sorted by Price -----------------");
         products.forEach(System.out::println);
 //        products.forEach(product -> System.out.println(product));
 
         // Sort by Rating
         products.sort((p1, p2) -> Double.compare(p2.rating, p1.rating));
-        System.out.println("\nSorted by Rating:");
+        System.out.println("\n---------------- Sorted by Rating:----------------");
         products.forEach(System.out::println);
 
         // Sort by Discount
         products.sort((p1, p2) -> Double.compare(p2.discount, p1.discount));
-        System.out.println("\nSorted by Discount:");
+        System.out.println("\n---------------- Sorted by Discount:----------------");
         products.forEach(System.out::println);
     }
 }
