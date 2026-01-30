@@ -1,4 +1,4 @@
-package com.lambdaexpression.functionalinterface;
+package com.functionalinterface.smartdevicecontrol;
 
 public interface DeviceAction {
     void turnOn();
