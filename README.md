@@ -473,3 +473,24 @@ _(Date: 26-Dec-2025)_
 
 🔗 _Code Link:_  
 👉 [Regex](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsPractice/src/com/regex)
+
+---
+
+### Day 06 – Annotations & Reflection
+
+**(Date: 22-Jan-2026)**
+
+- Annotations
+  - Common Built-in Annotations
+  - Creating Custom Annotations
+  - Advanced Custom Annotations
+  - Real-World Use Cases
+  - Annotation Processing Tools
+- Reflection
+  - Understanding of Reflection
+  - Using Reflection in Java
+
+🔗 _Code Link:_  
+👉 [Annotations](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsPractice/src/com/annotations)
+
+👉 [Reflection](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsPractice/src/com/reflection)
