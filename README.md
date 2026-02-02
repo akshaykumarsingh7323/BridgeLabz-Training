@@ -109,7 +109,7 @@
 
 ---
 
-### Day 05 – Annotations & Reflection
+### Day 06 – Annotations & Reflection
 
 **(Date: 22-Jan-2026)**
 
@@ -127,3 +127,23 @@
 👉 [Annotations](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsPractice/src/com/annotations)
 
 👉 [Reflection](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsPractice/src/com/reflection)
+
+---
+
+### Day 07 – Real-world scenario-based problems involving Collections, Generics, I/O Streams, and Regex
+
+**(Date: 23-Jan-2026)**
+
+- 1. ResumeAnalyzer – Smart Resume Filtering System
+- 2. TravelLog – Trip Organizer for Backpackers
+- 3. FeedbackGuru – Smart Survey Analyzer
+- 4. CodeRepoCleaner – Java File Scanner and Organizer
+- 5. ExamScanner – Digital Answer Sheet Validator
+- 6. MedInventory – Smart Hospital Inventory Tracker
+- 7. ChatLogParser – Messaging Pattern Analyzer
+- 8. SongVault – Personal Music Library Manager
+- 9. ExamResultUploader – Bulk Marks Processing
+- 10. DealTracker – E-Commerce Discount Validator
+
+🔗 _Code Link:_  
+👉 [scenario-based-practice](httphttps://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/scenario-based-codebase/ScenarioPractice/src/com/resumeanalyzer)
