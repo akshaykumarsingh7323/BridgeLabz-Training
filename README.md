@@ -139,6 +139,16 @@
 - 3. FeedbackGuru – Smart Survey Analyzer
 - 4. CodeRepoCleaner – Java File Scanner and Organizer
 - 5. ExamScanner – Digital Answer Sheet Validator
+
+🔗 _Code Link:_  
+👉 [scenario-based-practice](httphttps://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/scenario-based-codebase/ScenarioPractice/src/com/resumeanalyzer)
+
+---
+
+### Day 08 – Real-world scenario-based problems involving Collections, Generics, I/O Streams, and Regex
+
+**(Date: 24-Jan-2026)**
+
 - 6. MedInventory – Smart Hospital Inventory Tracker
 - 7. ChatLogParser – Messaging Pattern Analyzer
 - 8. SongVault – Personal Music Library Manager
@@ -147,3 +157,5 @@
 
 🔗 _Code Link:_  
 👉 [scenario-based-practice](httphttps://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/scenario-based-codebase/ScenarioPractice/src/com/resumeanalyzer)
+
+---
