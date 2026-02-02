@@ -446,3 +446,30 @@ _(Date: 26-Dec-2025)_
 👉 [Exceptions](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsPractice/src/com/exceptions)
 
 ---
+
+### Day 05 – Regex & JUnit
+
+**(Date: 21-Jan-2026)**
+
+- Regex
+- MetaCharacter
+- Quantifier
+- Common Patterns:
+  - Email Validation
+  - Password Strength
+  - Phone Number Format
+- Java Regex API
+  - Pattern
+  - Matcher
+- Methods:
+  - find()
+  - matches()
+  - replaceAll()
+- Introduction to JUnit Framework
+- JUnit Annotations
+- Writing Test Cases
+- Structure of a Test Class
+- Assertions
+
+🔗 _Code Link:_  
+👉 [Regex](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsPractice/src/com/regex)
