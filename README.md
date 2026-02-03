@@ -494,3 +494,20 @@ _(Date: 26-Dec-2025)_
 👉 [Annotations](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsPractice/src/com/annotations)
 
 👉 [Reflection](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsPractice/src/com/reflection)
+
+---
+
+## Week 05 - IO Programming
+
+### Day 1 – CSV Data Handling
+
+**(Date: 27-Jan-2026)**
+
+- Introduction to CSV
+- Reading CSV Files
+- Writing CSV Files
+- Parsing CSV Data
+- Data Validation
+
+🔗 _Code Link:_  
+👉 [CSV Data Handling](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-iostreams-practice/java-iostreams-practice/gcr-codebase/IOProgramming/src/com/csvdatahandling)
