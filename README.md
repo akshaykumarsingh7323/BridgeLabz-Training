@@ -49,4 +49,22 @@
 
 ---
 
+### Day 04 – Collectors
+
+**(Date: 30-Jan-2026)**
+
+- Transform Data
+- Aggregate Data
+- Group Data
+- Partition Data
+- toList(), toSet(), toMap()
+- joining()
+- groupingBy()
+- partitioningBy()
+- summarizingInt()
+
+👉 [Collectors](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Practice/src/com/collectors)
+
+---
+
 
