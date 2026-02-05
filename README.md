@@ -550,3 +550,16 @@ _(Date: 26-Dec-2025)_
 
 ---
 
+### Day 02 – Functional Interface
+
+**(Date: 28-Jan-2026)**
+
+- Defining and Implementing Interfaces (Best Practices)
+- Functional Interfaces
+- Default and Static Methods in Interfaces
+- Marker Interfaces
+
+🔗 _Code Link:_  
+👉 [Functional Interface](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Practice/src/com/functionalinterface)
+
+---
