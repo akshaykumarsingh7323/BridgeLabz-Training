@@ -594,7 +594,30 @@ _(Date: 26-Dec-2025)_
 - partitioningBy()
 - summarizingInt()
 
+🔗 _Code Link:_
 👉 [Collectors](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Practice/src/com/collectors)
 
 ---
+
+## Week 07 - Solution Designing
+
+### Day 01 – Design Principles
+
+**(Date: 31-Jan-2026)**
+
+- Introduction to Design Principles
+- Single Responsibility Principle (SRP)
+- Open/Closed Principle (OCP)
+- Liskov Substitution Principle (LSP)
+- Interface Segregation Principle (ISP)
+- Dependency Inversion Principle (DIP)
+- Don't Repeat Yourself (DRY)
+- Keep It Simple, Stupid (KISS)
+- You Aren't Gonna Need It (YAGNI)
+
+🔗 _Code Link:_  
+👉 [Design Principles](            )
+
+
+
 
