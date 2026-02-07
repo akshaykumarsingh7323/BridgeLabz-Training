@@ -1,4 +1,4 @@
-package com.librarymanagementsystem;
+package com.designpattern.librarymanagementsystem;
 
 abstract class User implements Observer {
 

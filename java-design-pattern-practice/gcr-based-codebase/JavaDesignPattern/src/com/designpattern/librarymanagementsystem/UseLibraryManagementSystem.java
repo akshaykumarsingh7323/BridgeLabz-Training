@@ -1,4 +1,4 @@
-package com.librarymanagementsystem;
+package com.designpattern.librarymanagementsystem;
 
 public class UseLibraryManagementSystem {
 
