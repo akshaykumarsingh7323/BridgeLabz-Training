@@ -36,3 +36,20 @@
 
 ---
 
+### Day 03 – Java Multithreading
+
+**(Date: 02-Feb-2026)**
+
+- Explored Multithreading in java
+- Thread Life Cycle
+- Thread Methods and Operations
+- Creating Threads Using Thread Class
+- Creating Threads Using Runnable Interface
+- Thread Class vs Runnable Interface
+- Solved practice and assignment problems based on multithreading
+- Committed and pushed solutions to the repository
+
+🔗 _Code Link:_  
+👉 [Java Multithreading](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/java-design-pattern-practice/java-design-pattern-practice/gcr-based-codebase/JavaDesignPattern/src/com/multithreading)
+
+---
