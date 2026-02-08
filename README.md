@@ -655,6 +655,26 @@ _(Date: 26-Dec-2025)_
 
 ---
 
+## Week 08 - MySQL & JDBC
+
+### Day 01 – MySQL
+
+**(Date: 06-Feb-2026)**
+
+- Create new branch mysql-jdbc-practice
+- Explored MySql Database
+- Explored Commands for creating Database and Tables
+- Types of Databases
+- Indexing
+- Committed and pushed solutions to the repository
+
+🔗 _Code Link:_  
+👉 [MySQL Practice](          )
+
+---
+
+
+
 
 
 
