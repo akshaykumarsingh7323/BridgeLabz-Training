@@ -1,0 +1,198 @@
+/*
+Exercise 3: Advanced Features
+Build a library management system with:
+• Book inventory
+• Student borrowing records
+*/
+
+
+
+------ Library Management System -------
+
+
+--------- Create Database ----------
+CREATE DATABASE librarydb;
+USE librarydb;
+
+
+----- Create Book Table -------
+CREATE TABLE books (
+book_id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(30),
+author VARCHAR(150) NOT NULL,
+total_copies INT NOT NULL,
+available_copies INT NOT NULL
+);
+
+---- Adding Books to Inventory ----
+INSERT INTO books 
+(name, author, total_copies, available_copies)
+VALUES
+('Java Programming', 'Herbert', 10, 10),
+('Python Basics', 'Guido', 8, 8),
+('Data Structures', 'Seymour', 6, 6),
+('Operating Systems', 'Tanen', 5, 5),
+('Database Systems', 'Codd', 7, 7),
+('Computer Networks', 'Andrew', 4, 4);
+
+
+----- Students Table Creation ------
+CREATE TABLE students (
+student_id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(30),
+department VARCHAR(30);
+
+------- Add Students details ---------
+INSERT INTO students
+(name, department)
+VALUES
+('Akshay Kumar', 'Computer Science'),
+('Aman Singh', 'Information Technology'),
+('Amit Kumar', 'Mechanical'),
+('Pankaj Singh', 'Civil'),
+('Rahul Mehta', 'Computer Science'),
+('Sumit Singh', 'Civil'),
+('Vishal Singh', 'Electronics'),
+('Bipul Bihari', 'Computer Science');
+
+
+------ Borrowed_records Table Creation -------
+CREATE TABLE borrowed_records (
+borrow_id INT AUTO_INCREMENT PRIMARY KEY,
+student_id INT,
+book_id INT,
+borrow_date DATE,
+due_date DATE,
+return_date DATE,
+FOREIGN KEY (student_id) REFERENCES students(student_id),
+FOREIGN KEY (book_id) REFERENCES books(book_id)
+);
+
+
+
+------------------------ Book Inventory ------------------------
+SELECT * FROM books;
+
+--- Output ---
++---------+-------------------+---------+--------------+------------------+
+| book_id | name              | author  | total_copies | available_copies |
++---------+-------------------+---------+--------------+------------------+
+|       1 | Java Programming  | Herbert |           10 |               10 |
+|       2 | Python Basics     | Guido   |            8 |                8 |
+|       3 | Data Structures   | Seymour |            6 |                6 |
+|       4 | Operating Systems | Tanen   |            5 |                5 |
+|       5 | Database Systems  | Codd    |            7 |                7 |
+|       6 | Computer Networks | Andrew  |            4 |                4 |
++---------+-------------------+---------+--------------+------------------+
+
+
+SELECT * FROM students;
+
+--- Output ---
++------------+--------------+------------------------+
+| student_id | name         | department             |
++------------+--------------+------------------------+
+|          1 | Akshay Kumar | Computer Science       |
+|          2 | Aman Singh   | Information Technology |
+|          3 | Amit Kumar   | Mechanical             |
+|          4 | Pankaj Singh | Civil                  |
+|          5 | Rahul Mehta  | Computer Science       |
+|          6 | Sumit Singh  | Civil                  |
+|          7 | Vishal Singh | Electronics            |
+|          8 | Bipul Bihari | Computer Science       |
++------------+--------------+------------------------+
+
+
+
+
+------------------------ Borrowing a book ----------------------
+START TRANSACTION;
+
+--- Book borrow ---
+INSERT INTO borrowed_records
+(student_id, book_id, borrow_date, due_date)
+VALUES
+(13, 4, CURDATE(), DATE_ADD(CURDATE(), INTERVAL 10 DAY);
+
+
+--- Update borrowed_records ---
+UPDATE borrowed_records
+SET available_copies = available_copies - 1;
+WHERE book_id = 4;
+
+COMMIT;
+
+
+
+INSERT INTO borrowed_records
+(student_id, book_id, borrow_date, due_date)
+VALUES
+(16, 6, CURDATE(), DATE_ADD(CURDATE(), INTERVAL 14 DAY));
+
+
+--- Update borrowed_records ---
+UPDATE borrowed_records
+SET available_copies = available_copies - 1;
+WHERE book_id = 4;
+
+COMMIT;
+
+
+
+
+------------------------- Fine Calculation -----------------------
+SELECT br.borrow_id,
+	   s.name AS student_name,
+	   b.title AS book_title,
+	   DATEDIFF(CURDATE(), br.due_date) * 10 AS fine_amount
+FROM borrowed_records br
+JOIN students s ON br.student_id = s.student_id
+JOIN books b ON br.book_id = b.book_id
+WHERE br.return_date IS NULL
+AND CURDATE() > br.due_date;
+
+
+
+
+----------------- Search Functionality (Multiple Filters) ------------
+
+--- Search by Title ---
+SELECT * FROM books
+WHERE title = 'Java Programming';
+
+-- Output --
++---------+------------------+---------+--------------+------------------+
+| book_id | title            | author  | total_copies | available_copies |
++---------+------------------+---------+--------------+------------------+
+|       1 | Java Programming | Herbert |           10 |               10 |
++---------+------------------+---------+--------------+------------------+
+
+
+
+--- Search by Author ---
+SELECT * FROM books
+WHERE author = 'Codd';
+
+-- Output --
++---------+------------------+--------+--------------+------------------+
+| book_id | title            | author | total_copies | available_copies |
++---------+------------------+--------+--------------+------------------+
+|       5 | Database Systems | Codd   |            7 |                7 |
++---------+------------------+--------+--------------+------------------+
+
+
+--- Search by available books ---
+SELECT * FROM books
+WHERE available_copies > 0;
+
+-- Output --
++---------+-------------------+---------+--------------+------------------+
+| book_id | title             | author  | total_copies | available_copies |
++---------+-------------------+---------+--------------+------------------+
+|       1 | Java Programming  | Herbert |           10 |               10 |
+|       2 | Python Basics     | Guido   |            8 |                7 |
+|       3 | Data Structures   | Seymour |            6 |                6 |
+|       4 | Operating Systems | Tanen   |            5 |                5 |
+|       5 | Database Systems  | Codd    |            7 |                7 |
+|       6 | Computer Networks | Andrew  |            4 |                4 |
++---------+-------------------+---------+--------------+------------------+
