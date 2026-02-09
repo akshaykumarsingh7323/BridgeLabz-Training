@@ -1,0 +1,99 @@
+/* Exercise 2: Transaction Management
+Implement a banking system with:
+• Transfer money between accounts (use transactions)
+• Check balance
+• Transaction history
+*/
+
+
+--------- Banking System -----------
+
+----- Creating Database -----
+CREATE DATABASE bankdb;
+USE bankdb;
+
+------ Creating Tables ------
+CREATE TABLE accounts (
+	id INT PRIMARY KEY,
+	name VARCHAR(30),
+	balance DOUBLE
+);
+
+
+-------------- Add Accounts -------------------
+INSERT INTO accounts (id, name, balance)
+VALUES (101, "Akshay", 25000),
+(101, "Akshay", 20000);
+
++-----+--------+---------+
+| id  | name   | balance |
++-----+--------+---------+
+| 101 | Akshay |   25000 |
+| 102 | Aman   |   20000 |
++-----+--------+---------+
+
+
+------ Creating transaction table ------
+CREATE TABLE transactions (
+	transaction_id INT PRIMARY KEY,
+	from_account INT,
+	to_account INT,
+	balance DOUBLE,
+	transaction_date
+);
+
++------------------+--------+------+-----+---------+-------+
+| Field            | Type   | Null | Key | Default | Extra |
++------------------+--------+------+-----+---------+-------+
+| transaction_id   | int    | NO   | PRI | NULL    |       |
+| from_account     | int    | NO   |     | NULL    |       |
+| to_account       | int    | NO   |     | NULL    |       |
+| balance          | double | YES  |     | NULL    |       |
+| transaction_date | date   | YES  |     | NULL    |       |
++------------------+--------+------+-----+---------+-------+
+
+
+--------- Make Transaction ----------
+UPDATE accounts
+SET balance = balance - 5000
+WHERE id = 101;
+
+UPDATE accounts
+SET balance = balance + 5000
+WHERE id = 102;
+
+
+----- Insert into Transaction -------
+INSERT INTO transactions (transaction_id, from_account, to_account, balance, transaction_date) 
+VALUES (101010, 101, 102, 5000.0, CURDATE());
+
+SELECT * FROM accounts;
+
++-----+--------+---------+
+| id  | name   | balance |
++-----+--------+---------+
+| 101 | Akshay |   20000 |
+| 102 | Aman   |   25000 |
++-----+--------+---------+
+
+
+------- Check Balance --------
+SELECT * FROM accounts;
+
++-----+--------+---------+
+| id  | name   | balance |
++-----+--------+---------+
+| 101 | Akshay |   20000 |
+| 102 | Aman   |   25000 |
++-----+--------+---------+
+
+
+------- Transaction History -------
+mysql> SELECT * FROM transactions;
++----------------+--------------+------------+---------+------------------+
+| transaction_id | from_account | to_account | balance | transaction_date |
++----------------+--------------+------------+---------+------------------+
+|         101010 |          101 |        102 |    5000 | 2026-02-09       |
++----------------+--------------+------------+---------+------------------+
+
+COMMIT;
