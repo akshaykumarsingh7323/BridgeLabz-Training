@@ -1,0 +1,98 @@
+/* Exercise 1: Simple CRUD Application
+Create a console-based Employee Management System with:
+• Add employee
+• View all employees
+• Update employee salary
+• Delete employee
+• Search employee by name
+*/
+
+
+
+
+
+--------- Employee Management System -----------
+----------- Database used :- MySql -------------
+
+
+----- Creating Database -----
+CREATE DATABASE employeedb;
+USE employeedb;
+
+
+------ Creating Tables ------
+CREATE TABLE employees (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(30),
+	salary INT
+);
+
+
+
+---------- CRUD OPERATIONS -----------
+
+
+-------------- 1. Add Employee -------------------
+INSERT INTO employees (name, salary)
+VALUES
+("Akshay", 10000),
+("Komal", 20000),
+("Aman", 30000),
+("Amit", 40000);
+
+
+--------------- 2. View all Employees ----------------
+SELECT * FROM employees;
+
+-- Output --
++----+---------+--------+
+| id | name    | salary |
++----+---------+--------+
+|  1 | Akshay |  10000 |
+|  2 | Komal   |  20000 |
+|  3 | Aman  |  30000 |
+|  4 | Amit  |  40000 |
++----+---------+--------+
+
+
+---------------- 3. Update Employee Salary --------------
+UPDATE employees
+SET salary = 35000
+WHERE name = "Akshay";
+
+-- Current Employee Table --
++----+--------+--------+
+| id | name   | salary |
++----+--------+--------+
+|  1 | Akshay |  35000 |
+|  2 | Komal  |  20000 |
+|  3 | Aman   |  40000 |
+|  4 | Amit   |  18000 |
++----+--------+--------+
+
+
+------------------ 4. Delete Employee ------------------
+DELETE FROM employees
+WHERE name = "Komal";
+
+-- Current Employee Table --
++----+--------+--------+
+| id | name   | salary |
++----+--------+--------+
+|  1 | Akshay |  35000 |
+|  3 | Aman   |  40000 |
+|  4 | Amit   |  18000 |
++----+--------+--------+
+
+
+------------------ 5. Search Employee by name ----------------
+SELECT * FROM employees
+WHERE name = "Akshay";
+
+-- Output --
+
++----+--------+--------+
+| id | name   | salary |
++----+--------+--------+
+|  1 | Akshay |  35000 |
++----+--------+--------+
