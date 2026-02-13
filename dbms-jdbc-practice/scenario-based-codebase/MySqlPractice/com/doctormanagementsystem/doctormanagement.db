@@ -1,0 +1,119 @@
+/*
+	2. Doctor Management
+	
+	UC-2.1: Add Doctor Profile
+	Actor: Administrator
+	Flow: Input doctor details (name, specialization, contact, consultation fee). 
+	Insert into doctors table with foreign key reference to specialties table.
+*/	
+
+CREATE TABLE specialties (
+    specialty_id INT PRIMARY KEY AUTO_INCREMENT,
+    specialty_name VARCHAR(100) NOT NULL UNIQUE
+);
+
+CREATE TABLE doctors (
+    doctor_id INT PRIMARY KEY AUTO_INCREMENT,
+    doctor_name VARCHAR(100) NOT NULL,
+    contact_number VARCHAR(15) NOT NULL,
+    consultation_fee DECIMAL(10,2) NOT NULL,
+    specialty_id INT NOT NULL,
+    is_active BOOLEAN DEFAULT TRUE,
+    CONSTRAINT fk_specialty
+        FOREIGN KEY (specialty_id)
+        REFERENCES specialties(specialty_id)
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT
+);
+
+INSERT INTO specialties (specialty_name)
+VALUES
+('Cardiology'),
+('Neurology'),
+('Orthopedics'),
+('Dermatology');
+
+INSERT INTO doctors
+(doctor_name, contact_number, consultation_fee, specialty_id)
+VALUES
+('Dr. Anil Kumar', '9876543210', 500.00, 1),
+('Dr. Priya Sharma', '9123456789', 600.00, 2),
+('Dr. Ravi Mehta', '9988776655', 450.00, 3);
+
+
+-- UC-2.2: Assign / Update Doctor Specialty
+
+START TRANSACTION;
+
+UPDATE doctors
+SET specialty_id = 4
+WHERE doctor_id = 3;
+
+COMMIT;
+
+-- UC-2.3: View Doctors by Specialty
+SELECT
+    d.doctor_id,
+    d.doctor_name,
+    d.contact_number,
+    d.consultation_fee,
+    s.specialty_name
+FROM doctors d
+JOIN specialties s
+ON d.specialty_id = s.specialty_id
+WHERE s.specialty_name = 'Dermatology'
+AND d.is_active = TRUE;
+
+
+-- Output 
++-----------+----------------+---------------+------------------+---------------+
+| doctor_id | doctor_name    | contact_number| consultation_fee| specialty_name|
++-----------+----------------+---------------+------------------+---------------+
+| 3         | Dr. Ravi Mehta | 9988776655    | 450.00           | Dermatology   |
++-----------+----------------+---------------+------------------+---------------+
+
+
+-- UC-2.4: Deactivate Doctor Profile (Soft Delete)
+
+CREATE TABLE appointments (
+    appointment_id INT PRIMARY KEY AUTO_INCREMENT,
+    doctor_id INT,
+    appointment_date DATE,
+    FOREIGN KEY (doctor_id) REFERENCES doctors(doctor_id)
+);
+
+SELECT COUNT(*) AS future_appointments
+FROM appointments
+WHERE doctor_id = 2
+AND appointment_date > CURDATE();
+
+-- output 
++---------------------+
+| future_appointments |
++---------------------+
+| 0                   |
++---------------------+
+
+UPDATE doctors
+SET is_active = FALSE
+WHERE doctor_id = 2;
+
+-- final verification query
+SELECT
+    d.doctor_id,
+    d.doctor_name,
+    s.specialty_name,
+    d.is_active
+FROM doctors d
+JOIN specialties s
+ON d.specialty_id = s.specialty_id;
+
+
+-- Final Output 
++-----------+----------------+---------------+-----------+
+| doctor_id | doctor_name    | specialty_name| is_active |
++-----------+----------------+---------------+-----------+
+| 1         | Dr. Anil Kumar | Cardiology    | 1         |
+| 2         | Dr. Priya Sharma| Neurology    | 0         |
+| 3         | Dr. Ravi Mehta | Dermatology   | 1         |
++-----------+----------------+---------------+-----------+
