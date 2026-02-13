@@ -1,0 +1,103 @@
+-- UC-4.1: Record Patient Visit
+CREATE TABLE visits (
+    visit_id INT PRIMARY KEY AUTO_INCREMENT,
+    appointment_id INT NOT NULL,
+    patient_id INT NOT NULL,
+    doctor_id INT NOT NULL,
+    visit_date DATE NOT NULL,
+    diagnosis VARCHAR(255),
+    notes TEXT,
+    CONSTRAINT fk_visit_appointment
+        FOREIGN KEY (appointment_id) REFERENCES appointments(appointment_id),
+    CONSTRAINT fk_visit_patient
+        FOREIGN KEY (patient_id) REFERENCES patients(patient_id),
+    CONSTRAINT fk_visit_doctor
+        FOREIGN KEY (doctor_id) REFERENCES doctors(doctor_id)
+);
+
+START TRANSACTION;
+
+INSERT INTO visits
+(appointment_id, patient_id, doctor_id, visit_date, diagnosis, notes)
+VALUES
+(1, 1, 2, CURDATE(), 'Viral Fever', 'Patient advised rest and hydration');
+
+UPDATE appointments
+SET status = 'COMPLETED'
+WHERE appointment_id = 1;
+
+COMMIT;
+
+-- Output
+Query OK, 1 row affected
+Query OK, 1 row affected
+Transaction committed
+
+------------------------------------------------------------
+------------------------------------------------------------
+
+-- UC-4.2: View Patient Medical History
+CREATE TABLE prescriptions (
+    prescription_id INT PRIMARY KEY AUTO_INCREMENT,
+    visit_id INT NOT NULL,
+    medicine_name VARCHAR(100),
+    dosage VARCHAR(50),
+    duration VARCHAR(50),
+    CONSTRAINT fk_prescription_visit
+        FOREIGN KEY (visit_id) REFERENCES visits(visit_id)
+);
+
+SELECT
+    v.visit_date,
+    d.doctor_name,
+    v.diagnosis,
+    p.medicine_name,
+    p.dosage,
+    p.duration
+FROM visits v
+JOIN doctors d
+ON v.doctor_id = d.doctor_id
+LEFT JOIN prescriptions p
+ON v.visit_id = p.visit_id
+WHERE v.patient_id = 1
+ORDER BY v.visit_date DESC;
+
+-- Output
++------------+-------------------+--------------+---------------+--------+----------+
+| visit_date | doctor_name       | diagnosis    | medicine_name | dosage | duration |
++------------+-------------------+--------------+---------------+--------+----------+
+| 2026-02-08 | Dr. Priya Sharma  | Viral Fever  | Paracetamol   | 500mg  | 5 days   |
++------------+-------------------+--------------+---------------+--------+----------+
+
+------------------------------------------------------------
+------------------------------------------------------------
+
+-- UC-4.3: Add Prescription Details
+INSERT INTO prescriptions
+(visit_id, medicine_name, dosage, duration)
+VALUES
+(1, 'Paracetamol', '500mg', '5 days'),
+(1, 'Vitamin C', '1 tablet', '7 days'),
+(1, 'Cough Syrup', '10 ml', '5 days');
+
+-- O/P Query OK, 3 rows affected
+
+SELECT
+    v.visit_id,
+    v.visit_date,
+    v.diagnosis,
+    p.medicine_name,
+    p.dosage,
+    p.duration
+FROM visits v
+JOIN prescriptions p
+ON v.visit_id = p.visit_id;
+
+-- Output
++----------+------------+-------------+---------------+--------+----------+
+| visit_id | visit_date | diagnosis   | medicine_name | dosage | duration |
++----------+------------+-------------+---------------+--------+----------+
+| 1        | 2026-02-08 | Viral Fever | Paracetamol   | 500mg  | 5 days   |
+| 1        | 2026-02-08 | Viral Fever | Vitamin C     | 1 tab  | 7 days   |
+| 1        | 2026-02-08 | Viral Fever | Cough Syrup   | 10 ml  | 5 days   |
++----------+------------+-------------+---------------+--------+----------+
