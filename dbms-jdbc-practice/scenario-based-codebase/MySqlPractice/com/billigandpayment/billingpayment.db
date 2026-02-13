@@ -1,0 +1,136 @@
+-- UC-5.1: Generate Bill for Visit
+CREATE TABLE bills (
+    bill_id INT PRIMARY KEY AUTO_INCREMENT,
+    visit_id INT NOT NULL,
+    bill_date DATE NOT NULL,
+    total_amount DECIMAL(10,2),
+    payment_status VARCHAR(20) DEFAULT 'UNPAID',
+    CONSTRAINT fk_bill_visit
+        FOREIGN KEY (visit_id) REFERENCES visits(visit_id)
+);
+
+
+CREATE TABLE bill_items (
+    item_id INT PRIMARY KEY AUTO_INCREMENT,
+    bill_id INT NOT NULL,
+    description VARCHAR(100),
+    amount DECIMAL(10,2),
+    CONSTRAINT fk_bill_item
+        FOREIGN KEY (bill_id) REFERENCES bills(bill_id)
+);
+
+
+INSERT INTO bills (visit_id, bill_date)
+VALUES (1, CURDATE());
+
+INSERT INTO bill_items (bill_id, description, amount)
+VALUES
+(1, 'Doctor Consultation Fee', 600.00),
+(1, 'Lab Test Charges', 400.00),
+(1, 'Medicine Charges', 300.00);
+
+UPDATE bills
+SET total_amount = (
+    SELECT SUM(amount)
+    FROM bill_items
+    WHERE bill_id = 1
+)
+WHERE bill_id = 1;
+
+------------------------------------------------------------
+------------------------------------------------------------
+
+-- UC-5.2: Record Payment
+
+CREATE TABLE payment_transactions (
+    transaction_id INT PRIMARY KEY AUTO_INCREMENT,
+    bill_id INT NOT NULL,
+    payment_date DATE,
+    payment_mode VARCHAR(50),
+    amount_paid DECIMAL(10,2),
+    CONSTRAINT fk_payment_bill
+        FOREIGN KEY (bill_id) REFERENCES bills(bill_id)
+);
+
+START TRANSACTION;
+
+UPDATE bills
+SET payment_status = 'PAID'
+WHERE bill_id = 1;
+
+INSERT INTO payment_transactions
+(bill_id, payment_date, payment_mode, amount_paid)
+VALUES
+(1, CURDATE(), 'CASH', 1300.00);
+
+COMMIT;
+
+-- O/P 
+Query OK, 1 row affected
+Query OK, 1 row affected
+Transaction committed
+
+------------------------------------------------------------
+------------------------------------------------------------
+
+-- UC-5.3: View Outstanding Bills
+SELECT
+    p.patient_name,
+    COUNT(b.bill_id) AS unpaid_bills,
+    SUM(b.total_amount) AS total_due
+FROM bills b
+JOIN visits v
+ON b.visit_id = v.visit_id
+JOIN patients p
+ON v.patient_id = p.patient_id
+WHERE b.payment_status = 'UNPAID'
+GROUP BY p.patient_name;
+
+-- Output 
++--------------+--------------+-----------+
+| patient_name | unpaid_bills | total_due |
++--------------+--------------+-----------+
+| Neha Singh   | 1            | 900.00    |
++--------------+--------------+-----------+
+
+------------------------------------------------------------
+------------------------------------------------------------
+
+-- UC-5.4: Generate Revenue Report
+SELECT
+    d.doctor_name,
+    SUM(b.total_amount) AS total_revenue
+FROM bills b
+JOIN visits v
+ON b.visit_id = v.visit_id
+JOIN doctors d
+ON v.doctor_id = d.doctor_id
+WHERE b.payment_status = 'PAID'
+AND b.bill_date BETWEEN '2026-02-01' AND '2026-02-28'
+GROUP BY d.doctor_name
+HAVING SUM(b.total_amount) > 1000;
+
+-- Output 
++-------------------+---------------+
+| doctor_name       | total_revenue |
++-------------------+---------------+
+| Dr. Priya Sharma  | 1300.00       |
++-------------------+---------------+
+
+SELECT
+    b.bill_id,
+    p.patient_name,
+    b.total_amount,
+    b.payment_status
+FROM bills b
+JOIN visits v
+ON b.visit_id = v.visit_id
+JOIN patients p
+ON v.patient_id = p.patient_id;
+
+-- Output 
++---------+--------------+--------------+---------------+
+| bill_id | patient_name | total_amount | payment_status|
++---------+--------------+--------------+---------------+
+| 1       | Rahul Verma  | 1300.00      | PAID          |
++---------+--------------+--------------+---------------+
