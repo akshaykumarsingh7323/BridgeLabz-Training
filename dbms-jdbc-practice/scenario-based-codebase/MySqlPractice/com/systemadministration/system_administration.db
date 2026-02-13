@@ -1,0 +1,120 @@
+-- UC-6.1: Manage Specialty Lookup
+CREATE TABLE specialties (
+    specialty_id INT PRIMARY KEY AUTO_INCREMENT,
+    specialty_name VARCHAR(100) UNIQUE NOT NULL
+);
+
+INSERT INTO specialties (specialty_name)
+VALUES ('Pediatrics');
+
+SELECT * FROM specialties;
+
+-- Output 
++--------------+----------------+
+| specialty_id | specialty_name |
++--------------+----------------+
+| 1            | Cardiology     |
+| 2            | Neurology      |
+| 3            | Orthopedics    |
+| 4            | Dermatology   |
+| 5            | Pediatrics    |
++--------------+----------------+
+
+UPDATE specialties
+SET specialty_name = 'Child Care'
+WHERE specialty_id = 5;
+
+SELECT COUNT(*) AS doctor_count
+FROM doctors
+WHERE specialty_id = 5;
+
+-- Output 
++--------------+
+| doctor_count |
++--------------+
+| 0            |
++--------------+
+
+DELETE FROM specialties
+WHERE specialty_id = 5;
+
+-- O/P Query OK, 1 row affected
+
+------------------------------------------------------------
+------------------------------------------------------------
+
+-- UC-6.2: Database Backup Trigger (Scheduled System Task)
+CREATE TABLE backup_log (
+    backup_id INT PRIMARY KEY AUTO_INCREMENT,
+    backup_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    table_name VARCHAR(100),
+    record_count INT
+);
+
+INSERT INTO backup_log (table_name, record_count)
+SELECT 'patients', COUNT(*) FROM patients;
+
+INSERT INTO backup_log (table_name, record_count)
+SELECT 'doctors', COUNT(*) FROM doctors;
+
+INSERT INTO backup_log (table_name, record_count)
+SELECT 'appointments', COUNT(*) FROM appointments;
+
+-- O/P Query OK, 1 row affected (each insert)
+
+SELECT * FROM backup_log;
+
+-- Output 
++-----------+---------------------+--------------+--------------+
+| backup_id | backup_date         | table_name   | record_count |
++-----------+---------------------+--------------+--------------+
+| 1         | 2026-02-08 10:30:00 | patients     | 2            |
+| 2         | 2026-02-08 10:30:00 | doctors      | 3            |
+| 3         | 2026-02-08 10:30:00 | appointments | 1            |
++-----------+---------------------+--------------+--------------+
+
+------------------------------------------------------------
+------------------------------------------------------------
+
+
+-- UC-6.3: View System Audit Logs
+CREATE TABLE audit_log (
+    audit_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_name VARCHAR(50),
+    action_type VARCHAR(10),
+    table_name VARCHAR(50),
+    action_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TRIGGER doctor_audit_insert
+AFTER INSERT ON doctors
+FOR EACH ROW
+INSERT INTO audit_log (user_name, action_type, table_name)
+VALUES ('ADMIN', 'INSERT', 'doctors');
+
+CREATE TRIGGER doctor_audit_update
+AFTER UPDATE ON doctors
+FOR EACH ROW
+INSERT INTO audit_log (user_name, action_type, table_name)
+VALUES ('ADMIN', 'UPDATE', 'doctors');
+
+CREATE TRIGGER doctor_audit_delete
+AFTER DELETE ON doctors
+FOR EACH ROW
+INSERT INTO audit_log (user_name, action_type, table_name)
+VALUES ('ADMIN', 'DELETE', 'doctors');
+
+SELECT *
+FROM audit_log
+WHERE table_name = 'doctors'
+AND action_time BETWEEN '2026-02-01' AND '2026-02-28'
+AND user_name = 'ADMIN'
+ORDER BY action_time DESC;
+
+-- Output 
++----------+-----------+-------------+-----------+---------------------+
+| audit_id | user_name | action_type | table_name| action_time         |
++----------+-----------+-------------+-----------+---------------------+
+| 3        | ADMIN     | UPDATE      | doctors   | 2026-02-08 10:40:12 |
+| 2        | ADMIN     | INSERT      | doctors   | 2026-02-08 10:35:01 |
++----------+-----------+-------------+-----------+---------------------+
