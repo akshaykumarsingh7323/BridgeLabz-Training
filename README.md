@@ -17,3 +17,23 @@
 👉 [MySQL Practice](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dbms-jdbc-practice/dbms-jdbc-practice/gcr-codebase/MySqlPractice/com)
 
 ---
+
+### Day 02 – JDBC
+
+**(Date: 10-Feb-2026)**
+
+- Prerequisites and Setup
+- JDBC Architecture
+- Establishing Database Connection
+- CRUD Operations
+- PreparedStatement vs Statement
+- Transaction Management
+- Connection Pooling
+- Best Practices
+- Complete Project Examples
+
+🔗 _Code Link:_  
+👉 [JDBC Practice](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/dbms-jdbc-practice/dbms-jdbc-practice/gcr-codebase/JDBCPractice/src/main/java/com)
+
+---
+
