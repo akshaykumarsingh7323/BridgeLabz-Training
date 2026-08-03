@@ -22,3 +22,29 @@
 
 🔗 Code Link: 
 - 📌 [Day-1](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-1)
+
+---
+
+### Day 2 – ER Diagram, Indexing & Normalization
+**Date:** 03-August-2026
+
+📖 Topics Covered
+- **Entity Relationship (ER) Diagram**
+- **Entities, Attributes & Relationships**
+- **Primary Key & Foreign Key**
+- **Cardinality (1:1, 1:N, M:N)**
+- **Database Indexing**
+- **Query Optimization using Indexes**
+- **Normalization (1NF, 2NF, 3NF, BCNF)**
+
+💻 Practical Work
+- Designed the ER Diagram for the Health Clinic Management System.
+- Identified entities, attributes, and relationships.
+- Implemented Primary Key and Foreign Key constraints.
+- Applied cardinality between database entities.
+- Created indexes to improve query performance.
+- Used `EXPLAIN` to compare query execution before and after indexing.
+- Normalized the database schema up to BCNF to eliminate redundancy and improve data integrity.
+
+🔗 Code Link: 
+- 📌 [Day-2](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-2)
