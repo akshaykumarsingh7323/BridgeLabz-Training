@@ -48,3 +48,25 @@
 
 🔗 Code Link: 
 - 📌 [Day-2](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-2)
+
+---
+
+### Day 3 – SQL Joins, Stored Procedures & Triggers
+**Date:** 04-August-2026
+
+📖 Topics Covered
+- **SQL Joins (INNER, LEFT, RIGHT & FULL OUTER)**
+- **Stored Procedures**
+- **Creating and Executing Stored Procedures**
+- **Triggers**
+- **Trigger Use Cases for Automated Database Actions**
+- **Health Clinic Database Automation**
+
+💻 Practical Work
+- Practiced **INNER, LEFT, RIGHT, and FULL OUTER JOIN** queries on the Health Clinic database.
+- Retrieved data by combining multiple related tables using SQL joins.
+- Created and executed **Stored Procedures** for reusable database operations.
+- Implemented **Triggers** to automate database actions (e.g., updating visit history).
+
+🔗 Code Link:
+- 📌 [Day-3](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-3)
