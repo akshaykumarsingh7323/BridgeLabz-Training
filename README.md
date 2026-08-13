@@ -124,3 +124,24 @@
 
 🔗 Code Link:
 - 📌 [Day-5](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-5)
+---
+
+### Day 6 – Spring MVC & My Greetings App
+**Date:** 07-August-2026
+
+📖 Topics Covered
+- **Spring MVC Architecture**
+- **DispatcherServlet**
+- **Request Mapping and Request Handling**
+- **Spring MVC with Spring Boot**
+
+💻 Practical Work
+
+- Explored the **Spring MVC architecture** and request processing flow.
+- Learned the role of **DispatcherServlet** as the front controller.
+- Worked with **Controllers, Views, and Request Mapping** in Spring MVC.
+- Created a Maven-based **Spring Boot application using Spring MVC**.
+- Built **My Greetings App** using Spring MVC.
+
+🔗 Code Link:
+- 📌 [Day-6](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-6)
