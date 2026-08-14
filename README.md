@@ -174,3 +174,28 @@
 🔗 Code Link:
 
 - 📌 [Day-7](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-7)
+
+
+---
+
+
+### Day 8 – REST Assured & SDLC
+**Date:** 11-August-2026
+
+📖 Topics Covered
+
+- **REST Assured**
+- **Testing RESTful Endpoints**
+- **Software Development Life Cycle (SDLC)**
+
+💻 Practical Work
+
+- Continued development of the **Contacts App backend** using Spring Boot.
+- Tested **Contacts App REST endpoints** using **REST Assured**.
+- Learned about the **Software Development Life Cycle (SDLC)** and the role of backend development in the development process.
+
+🔗 Code Link:
+
+- 📌 [Day-8](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-8)
+
+---
