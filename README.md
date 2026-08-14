@@ -199,3 +199,27 @@
 - 📌 [Day-8](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-8)
 
 ---
+
+### Day 9 – Spring Boot Fundamentals & Swagger API Documentation
+**Date:** 12-August-2026
+
+📖 Topics Covered
+
+- **Spring Boot Auto-Configuration**
+- **Spring Boot Starters**
+- **Embedded Server**
+- **REST API Basics in Spring Boot**
+- **Swagger / OpenAPI**
+
+💻 Practical Work
+
+- Explored **Spring Boot auto-configuration** and how it simplifies application setup.
+- Learned about **Spring Boot starters** and dependency management.
+- Explored the use of the **embedded server** in Spring Boot applications.
+- Learned the basics of **Spring Controllers and REST APIs**.
+- Continued development of the **Contacts App backend** using Spring Boot.
+- Implemented **Swagger / OpenAPI** for the REST API.
+
+🔗 Code Link:
+
+- 📌 [Day-9](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-9)
