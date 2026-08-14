@@ -145,3 +145,32 @@
 
 🔗 Code Link:
 - 📌 [Day-6](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-6)
+
+
+---
+
+
+### Day 7 – Spring REST API, H2 Database & Contacts App
+**Date:** 10-August-2026
+
+📖 Topics Covered
+
+- **Spring REST API Programming**
+- **H2 In-Memory Database**
+- **CRUD Operations**
+- **Exception Handling**
+- **Field Validation**
+
+💻 Practical Work
+
+- Explored **REST API programming** and building RESTful endpoints using Spring Boot.
+- Explored the basics of the **H2 in-memory database**.
+- Started developing the **Contacts App backend** using Spring Boot.
+- Implemented basic **REST endpoints** for the Contacts App.
+- Implemented **CRUD operations** for contact management.
+- Added **exception handling** for API error scenarios.
+- Implemented **field-level validations** for contact data.
+
+🔗 Code Link:
+
+- 📌 [Day-7](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-7)
