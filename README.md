@@ -278,3 +278,27 @@
 
 🔗 Code Link:
 - 📌 [Day-11](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-11)
+
+
+---
+
+### Day 12 – Swagger, Logging & API Documentation
+**Date:** 17-August-2026
+
+📖 Topics Covered
+
+- **Spring Bean Scopes (Singleton, Prototype, Request, Session)**
+- **Logging in Spring Boot Applications**
+- **Maven – Build & Dependency Management**
+- **Swagger – API Documentation**
+
+💻 Practical Work
+
+- Implemented and practiced Spring Bean Scopes in the Spring Boot application.
+- Implemented Logging using SLF4J Logger and LoggerFactory.
+- Added logging in Controller, Service, and Global Exception Handler layers.
+- Used different logging levels such as INFO, DEBUG, WARN, and ERROR.
+- Documented and tested Employee and Department APIs using Swagger UI.
+
+🔗 Code Link:
+- 📌 [Day-11](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-12)
