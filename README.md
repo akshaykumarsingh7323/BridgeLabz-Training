@@ -223,3 +223,32 @@
 🔗 Code Link:
 
 - 📌 [Day-9](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-9)
+
+
+---
+
+
+### Day 10 – Dependency Injection & H2 Database
+
+**Date:** 13-August-2026
+
+📖 Topics Covered
+
+* **Dependency Injection in Spring Boot**
+* **H2 Database**
+* **Dependency Injection Deep Dive**
+* **H2 Database Integration and Configuration**
+
+💻 Practical Work
+
+* Explored **Dependency Injection** in Spring Boot in detail.
+* Learned how Spring manages dependencies using **IoC Container**.
+* Understood different types of **Dependency Injection**, including constructor, setter, and field injection.
+* Learned about **H2 Database** and its integration with Spring Boot.
+* Configured and connected the **H2 Database** with the application.
+* Wired the H2 Database into the **Employee Payroll App backend**.
+* Tested database operations using the Spring Boot application.
+
+🔗 Code Link:
+
+* 📌 [Day-10](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-10)
