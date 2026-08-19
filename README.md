@@ -301,4 +301,36 @@
 - Documented and tested Employee and Department APIs using Swagger UI.
 
 🔗 Code Link:
-- 📌 [Day-11](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-12)
+- 📌 [Day-12](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-12)
+
+
+---
+
+
+### Day 13 – Spring Security and JWT Authentication
+**Date:** 18-August-2026
+
+📖 Topics Covered
+
+- **Spring Security Fundamentals**
+- **Spring Security Authentication & Authorization**
+- **JWT (JSON Web Token) – Token-Based Authentication**
+- **Spring Security Filter & SecurityFilterChain**
+- **Password Encoding using BCrypt**
+- **CSRF & JWT Security**
+- **Authentication using JWT Token**
+
+💻 Practical Work
+
+- Implemented User Registration functionality in the Fundoo Notes App.
+- Implemented User Login with Spring Security and JWT-based authentication.
+- Implemented JwtService for JWT token generation, extraction, validation, and expiration handling.
+- Implemented JwtAuthenticationFilter to authenticate requests using JWT tokens.
+- Implemented Password Recovery functionality using a temporary reset token and token expiry.
+- Secured protected APIs using Spring Security and JWT Authentication.
+
+🔗 Code Link:
+- 📌 [Day-13](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-13)
+
+
+---
