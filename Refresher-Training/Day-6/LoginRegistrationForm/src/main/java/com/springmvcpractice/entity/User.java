@@ -6,94 +6,74 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 @Entity
 
 @Table(name = "users")
 
 public class User {
 
+	@Id
 
-    @Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    @GeneratedValue(
-        strategy = GenerationType.IDENTITY
-    )
+	private int id;
 
-    private int id;
+	private String name;
 
+	private String email;
 
-    private String name;
+	private String password;
 
+	public User() {
 
-    private String email;
+	}
 
+	public User(String name, String email, String password) {
 
-    private String password;
+		this.name = name;
 
+		this.email = email;
 
-    public User() {
+		this.password = password;
+	}
 
-    }
+	public int getId() {
 
+		return id;
+	}
 
-    public User(
-            String name,
-            String email,
-            String password) {
+	public void setId(int id) {
 
-        this.name = name;
+		this.id = id;
+	}
 
-        this.email = email;
+	public String getName() {
 
-        this.password = password;
-    }
+		return name;
+	}
 
+	public void setName(String name) {
 
-    public int getId() {
+		this.name = name;
+	}
 
-        return id;
-    }
+	public String getEmail() {
 
+		return email;
+	}
 
-    public void setId(int id) {
+	public void setEmail(String email) {
 
-        this.id = id;
-    }
+		this.email = email;
+	}
 
+	public String getPassword() {
 
-    public String getName() {
+		return password;
+	}
 
-        return name;
-    }
+	public void setPassword(String password) {
 
-
-    public void setName(String name) {
-
-        this.name = name;
-    }
-
-
-    public String getEmail() {
-
-        return email;
-    }
-
-
-    public void setEmail(String email) {
-
-        this.email = email;
-    }
-
-
-    public String getPassword() {
-
-        return password;
-    }
-
-
-    public void setPassword(String password) {
-
-        this.password = password;
-    }
+		this.password = password;
+	}
 }

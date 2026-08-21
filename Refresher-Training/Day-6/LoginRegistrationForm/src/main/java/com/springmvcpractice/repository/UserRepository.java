@@ -14,83 +14,64 @@ import com.springmvcpractice.entity.User;
 
 public class UserRepository {
 
-    @PersistenceContext
+	@PersistenceContext
 
-    private EntityManager entityManager;
+	private EntityManager entityManager;
 
+	// Save user
 
-    // Save user
+	@Transactional
 
-    @Transactional
+	public void save(User user) {
 
-    public void save(User user) {
+		entityManager.persist(user);
+	}
 
-        entityManager.persist(user);
-    }
+	// Find user by email
 
+	public User findByEmail(String email) {
 
-    // Find user by email
+		try {
 
-    public User findByEmail(String email) {
+			return entityManager.createQuery("SELECT u FROM User u " + "WHERE u.email = :email", User.class)
 
-        try {
+					.setParameter("email", email)
 
-            return entityManager.createQuery(
-                    "SELECT u FROM User u " +
-                    "WHERE u.email = :email",
-                    User.class
-                )
+					.getSingleResult();
 
-                .setParameter(
-                    "email",
-                    email
-                )
+		} catch (Exception e) {
 
-                .getSingleResult();
+			return null;
+		}
+	}
 
-        } catch (Exception e) {
+	// Find user by ID
 
-            return null;
-        }
-    }
+	public User findById(int id) {
 
+		return entityManager.find(User.class, id);
+	}
 
-    // Find user by ID
+	// Update user
 
-    public User findById(int id) {
+	@Transactional
 
-        return entityManager.find(
-            User.class,
-            id
-        );
-    }
+	public void update(User user) {
 
+		entityManager.merge(user);
+	}
 
-    // Update user
+	// Delete user
 
-    @Transactional
+	@Transactional
 
-    public void update(User user) {
+	public void delete(int id) {
 
-        entityManager.merge(user);
-    }
+		User user = entityManager.find(User.class, id);
 
+		if (user != null) {
 
-    // Delete user
-
-    @Transactional
-
-    public void delete(int id) {
-
-        User user =
-            entityManager.find(
-                User.class,
-                id
-            );
-
-        if (user != null) {
-
-            entityManager.remove(user);
-        }
-    }
+			entityManager.remove(user);
+		}
+	}
 }

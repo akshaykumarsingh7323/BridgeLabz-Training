@@ -12,79 +12,58 @@ import com.springmvcpractice.repository.UserRepository;
 
 public class UserService {
 
-    @Autowired
+	@Autowired
 
-    private UserRepository userRepository;
+	private UserRepository userRepository;
 
+	// Registration
 
-    // Registration
+	public boolean register(User user) {
 
-    public boolean register(User user) {
+		User existingUser = userRepository.findByEmail(user.getEmail());
 
-        User existingUser =
-            userRepository.findByEmail(
-                user.getEmail()
-            );
+		if (existingUser != null) {
 
+			return false;
+		}
 
-        if (existingUser != null) {
+		userRepository.save(user);
 
-            return false;
-        }
+		return true;
+	}
 
+	// Login
 
-        userRepository.save(user);
+	public User login(String email, String password) {
 
+		User user = userRepository.findByEmail(email);
 
-        return true;
-    }
+		if (user != null && user.getPassword().equals(password)) {
 
+			return user;
+		}
 
-    // Login
+		return null;
+	}
 
-    public User login(
-            String email,
-            String password) {
+	// Find user by ID
 
-        User user =
-            userRepository.findByEmail(
-                email
-            );
+	public User getUserById(int id) {
 
+		return userRepository.findById(id);
+	}
 
-        if (
-            user != null &&
-            user.getPassword().equals(password)
-        ) {
+	// Update user
 
-            return user;
-        }
+	public void updateUser(User user) {
 
+		userRepository.update(user);
+	}
 
-        return null;
-    }
+	// Delete user
 
+	public void deleteUser(int id) {
 
-    // Find user by ID
-
-    public User getUserById(int id) {
-
-        return userRepository.findById(id);
-    }
-
-
-    // Update user
-
-    public void updateUser(User user) {
-
-        userRepository.update(user);
-    }
-
-
-    // Delete user
-
-    public void deleteUser(int id) {
-
-        userRepository.delete(id);
-    }
+		userRepository.delete(id);
+	}
 }

@@ -22,169 +22,96 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-
 @Configuration
 
-@PropertySource(
-    "classpath:application.properties"
-)
+@PropertySource("classpath:application.properties")
 
-
-@ComponentScan({
-    "com.springmvcpractice.service",
-    "com.springmvcpractice.repository"
-})
-
+@ComponentScan({ "com.springmvcpractice.service", "com.springmvcpractice.repository" })
 
 @EnableTransactionManagement
 
 public class RootConfig {
 
+	@Value("${db.driver}")
+	private String driver;
 
-    @Value("${db.driver}")
-    private String driver;
+	@Value("${db.url}")
+	private String url;
 
+	@Value("${db.username}")
+	private String username;
 
-    @Value("${db.url}")
-    private String url;
+	@Value("${db.password}")
+	private String password;
 
+	@Value("${hibernate.dialect}")
+	private String dialect;
 
-    @Value("${db.username}")
-    private String username;
+	@Value("${hibernate.show_sql}")
+	private String showSql;
 
+	@Value("${hibernate.format_sql}")
+	private String formatSql;
 
-    @Value("${db.password}")
-    private String password;
+	@Value("${hibernate.hbm2ddl.auto}")
+	private String hbm2ddlAuto;
 
+	// Database Connection
 
-    @Value("${hibernate.dialect}")
-    private String dialect;
+	@Bean
 
+	public DataSource dataSource() {
 
-    @Value("${hibernate.show_sql}")
-    private String showSql;
+		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 
+		dataSource.setDriverClassName(driver);
 
-    @Value("${hibernate.format_sql}")
-    private String formatSql;
+		dataSource.setUrl(url);
 
+		dataSource.setUsername(username);
 
-    @Value("${hibernate.hbm2ddl.auto}")
-    private String hbm2ddlAuto;
+		dataSource.setPassword(password);
 
+		return dataSource;
+	}
 
-    // Database Connection
+	// JPA + Hibernate
 
-    @Bean
+	@Bean
 
-    public DataSource dataSource() {
+	public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
 
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+		LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
 
+		factory.setDataSource(dataSource());
 
-        dataSource.setDriverClassName(
-                driver
-        );
+		factory.setPackagesToScan("com.springmvcpractice.entity");
 
+		HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 
-        dataSource.setUrl(
-                url
-        );
+		factory.setJpaVendorAdapter(vendorAdapter);
 
+		Properties properties = new Properties();
 
-        dataSource.setUsername(
-                username
-        );
+		properties.put("hibernate.dialect", dialect);
 
+		properties.put("hibernate.show_sql", showSql);
 
-        dataSource.setPassword(
-                password
-        );
+		properties.put("hibernate.format_sql", formatSql);
 
+		properties.put("hibernate.hbm2ddl.auto", hbm2ddlAuto);
 
-        return dataSource;
-    }
+		factory.setJpaProperties(properties);
 
+		return factory;
+	}
 
-    // JPA + Hibernate
+	// Transaction Manager
 
-    @Bean
+	@Bean
 
-    public LocalContainerEntityManagerFactoryBean
-    entityManagerFactory() {
+	public JpaTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
 
-
-        LocalContainerEntityManagerFactoryBean factory =
-                new LocalContainerEntityManagerFactoryBean();
-
-
-        factory.setDataSource(
-                dataSource()
-        );
-
-
-        factory.setPackagesToScan(
-                "com.springmvcpractice.entity"
-        );
-
-
-        HibernateJpaVendorAdapter vendorAdapter =
-                new HibernateJpaVendorAdapter();
-
-
-        factory.setJpaVendorAdapter(
-                vendorAdapter
-        );
-
-
-        Properties properties =
-                new Properties();
-
-
-        properties.put(
-                "hibernate.dialect",
-                dialect
-        );
-
-
-        properties.put(
-                "hibernate.show_sql",
-                showSql
-        );
-
-
-        properties.put(
-                "hibernate.format_sql",
-                formatSql
-        );
-
-
-        properties.put(
-                "hibernate.hbm2ddl.auto",
-                hbm2ddlAuto
-        );
-
-
-        factory.setJpaProperties(
-                properties
-        );
-
-
-        return factory;
-    }
-
-
-    // Transaction Manager
-
-    @Bean
-
-    public JpaTransactionManager
-    transactionManager(
-            EntityManagerFactory entityManagerFactory) {
-
-
-        return new JpaTransactionManager(
-                entityManagerFactory
-        );
-    }
+		return new JpaTransactionManager(entityManagerFactory);
+	}
 }

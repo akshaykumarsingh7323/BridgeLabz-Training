@@ -22,284 +22,187 @@ import com.springmvcpractice.service.UserService;
 
 public class UserController {
 
-    @Autowired
+	@Autowired
 
-    private UserService userService;
+	private UserService userService;
 
+	// Login page
 
-    // Login page
+	@GetMapping({ "/", "/login" })
 
-    @GetMapping({
-        "/", "/login"
-    })
+	public String loginPage() {
 
-    public String loginPage() {
+		return "login";
+	}
 
-        return "login";
-    }
+	// Registration page
 
+	@GetMapping("/register")
 
-    // Registration page
+	public String registerPage() {
 
-    @GetMapping("/register")
+		return "registration";
+	}
 
-    public String registerPage() {
+	// Registration
 
-        return "registration";
-    }
+	@PostMapping("/register")
 
+	public String register(
 
-    // Registration
+			@RequestParam("name") String name,
 
-    @PostMapping("/register")
+			@RequestParam("email") String email,
 
-    public String register(
+			@RequestParam("password") String password,
 
-            @RequestParam("name")
-            String name,
+			Model model) {
 
-            @RequestParam("email")
-            String email,
+		User user = new User(name, email, password);
 
-            @RequestParam("password")
-            String password,
+		boolean result = userService.register(user);
 
-            Model model) {
+		if (result) {
 
+			model.addAttribute("success", "Registration successful. Please login.");
 
-        User user = new User(
-            name,
-            email,
-            password
-        );
+			return "login";
+		}
 
+		model.addAttribute("error", "Email is already registered.");
 
-        boolean result =
-            userService.register(user);
+		return "registration";
+	}
 
+	// Login
 
-        if (result) {
+	@PostMapping("/login")
 
-            model.addAttribute(
-                "success",
-                "Registration successful. Please login."
-            );
+	public String login(
 
+			@RequestParam("email") String email,
 
-            return "login";
-        }
+			@RequestParam("password") String password,
 
+			HttpSession session,
 
-        model.addAttribute(
-            "error",
-            "Email is already registered."
-        );
+			Model model) {
 
+		User user = userService.login(email, password);
 
-        return "registration";
-    }
+		if (user != null) {
 
+			session.setAttribute("loggedInUser", user);
 
-    // Login
+			return "redirect:/home";
+		}
 
-    @PostMapping("/login")
+		model.addAttribute("error", "Invalid email or password.");
 
-    public String login(
+		return "login";
+	}
 
-            @RequestParam("email")
-            String email,
+	// Home page
 
-            @RequestParam("password")
-            String password,
+	@GetMapping("/home")
 
-            HttpSession session,
+	public String homePage(HttpSession session) {
 
-            Model model) {
+		User user = (User) session.getAttribute("loggedInUser");
 
+		if (user == null) {
 
-        User user =
-            userService.login(
-                email,
-                password
-            );
+			return "redirect:/login";
+		}
 
+		return "home";
+	}
 
-        if (user != null) {
+	// Update password page
 
-            session.setAttribute(
-                "loggedInUser",
-                user
-            );
+	@GetMapping("/profile")
 
+	public String profile(
 
-            return "redirect:/home";
-        }
+			HttpSession session,
 
+			Model model) {
 
-        model.addAttribute(
-            "error",
-            "Invalid email or password."
-        );
+		User user = (User) session.getAttribute("loggedInUser");
 
+		if (user == null) {
 
-        return "login";
-    }
+			return "redirect:/login";
+		}
 
+		model.addAttribute("user", user);
 
-    // Home page
+		return "profile";
+	}
 
-    @GetMapping("/home")
+	// Update password
 
-    public String homePage(
-            HttpSession session) {
+	@PostMapping("/update-password")
 
+	public String updatePassword(
 
-        User user =
-            (User) session.getAttribute(
-                "loggedInUser"
-            );
+			@RequestParam("password") String password,
 
+			HttpSession session) {
 
-        if (user == null) {
+		User loggedInUser = (User) session.getAttribute("loggedInUser");
 
-            return "redirect:/login";
-        }
+		if (loggedInUser == null) {
 
+			return "redirect:/login";
+		}
 
-        return "home";
-    }
+		User user = userService.getUserById(loggedInUser.getId());
 
+		if (user == null) {
 
-    // Update password page
+			session.invalidate();
 
-    @GetMapping("/profile")
+			return "redirect:/login";
+		}
 
-    public String profile(
+		user.setPassword(password);
 
-            HttpSession session,
+		userService.updateUser(user);
 
-            Model model) {
+		session.setAttribute("loggedInUser", user);
 
+		return "redirect:/home";
+	}
 
-        User user =
-            (User) session.getAttribute(
-                "loggedInUser"
-            );
+	// Delete account
 
+	@GetMapping("/delete-account")
 
-        if (user == null) {
+	public String deleteAccount(HttpSession session) {
 
-            return "redirect:/login";
-        }
+		User user = (User) session.getAttribute("loggedInUser");
 
+		if (user == null) {
 
-        model.addAttribute(
-            "user",
-            user
-        );
+			return "redirect:/login";
+		}
 
+		userService.deleteUser(user.getId());
 
-        return "profile";
-    }
+		session.invalidate();
 
+		return "redirect:/login";
+	}
 
-    // Update password
+	// Logout
 
-    @PostMapping("/update-password")
+	@GetMapping("/logout")
 
-    public String updatePassword(
+	public String logout(HttpSession session) {
 
-            @RequestParam("password")
-            String password,
+		session.invalidate();
 
-            HttpSession session) {
-
-
-        User loggedInUser =
-            (User) session.getAttribute(
-                "loggedInUser"
-            );
-
-
-        if (loggedInUser == null) {
-
-            return "redirect:/login";
-        }
-
-
-        User user =
-            userService.getUserById(
-                loggedInUser.getId()
-            );
-
-
-        if (user == null) {
-
-            session.invalidate();
-
-            return "redirect:/login";
-        }
-
-
-        user.setPassword(password);
-
-
-        userService.updateUser(user);
-
-
-        session.setAttribute(
-            "loggedInUser",
-            user
-        );
-
-
-        return "redirect:/home";
-    }
-
-
-    // Delete account
-
-    @GetMapping("/delete-account")
-
-    public String deleteAccount(
-            HttpSession session) {
-
-
-        User user =
-            (User) session.getAttribute(
-                "loggedInUser"
-            );
-
-
-        if (user == null) {
-
-            return "redirect:/login";
-        }
-
-
-        userService.deleteUser(
-            user.getId()
-        );
-
-
-        session.invalidate();
-
-
-        return "redirect:/login";
-    }
-
-
-    // Logout
-
-    @GetMapping("/logout")
-
-    public String logout(
-            HttpSession session) {
-
-
-        session.invalidate();
-
-
-        return "redirect:/login";
-    }
+		return "redirect:/login";
+	}
 }

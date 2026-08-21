@@ -9,35 +9,23 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
-
 @Configuration
 @EnableWebMvc
 
-@ComponentScan(
-    basePackages = "com.springmvcpractice.controller"
-)
+@ComponentScan(basePackages = "com.springmvcpractice.controller")
 
 public class WebConfig implements WebMvcConfigurer {
 
+	@Bean
 
-    @Bean
+	public InternalResourceViewResolver viewResolver() {
 
-    public InternalResourceViewResolver viewResolver() {
+		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
 
-        InternalResourceViewResolver resolver =
-                new InternalResourceViewResolver();
+		resolver.setPrefix("/WEB-INF/views/");
 
+		resolver.setSuffix(".jsp");
 
-        resolver.setPrefix(
-                "/WEB-INF/views/"
-        );
-
-
-        resolver.setSuffix(
-                ".jsp"
-        );
-
-
-        return resolver;
-    }
+		return resolver;
+	}
 }
