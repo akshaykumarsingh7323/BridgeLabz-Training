@@ -334,3 +334,36 @@
 
 
 ---
+
+
+### Day 14 – Authorization & JPA for Notes Management
+
+**Date:** 19-August-2026
+
+📖 Topics Covered
+
+- **Authentication vs Authorization**
+- **JWT-based secure token authentication and authorization**
+- **JPA Entity Relationships**
+- **@ManyToOne and @JoinColumn relationship mapping**
+- **User and Notes entity relationship**
+
+💻 Practical Work
+
+- Implemented Authentication & Authorization using Spring Security and JWT.
+- Secured Notes APIs using JWT-based token verification.
+- Implemented user-specific Notes access so users can access only their own notes.
+- Implemented JPA relationship between User and Note entities using @ManyToOne.
+- Used @JoinColumn(name = "user_id") to create the foreign-key relationship.
+- Implemented Notes Management functionality:
+- Create Note
+- Get All Notes
+- Get Note by ID
+- Update Note
+- Delete Note
+
+🔗 Code Link:
+- 📌 [Day-14](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-14)
+
+
+---
