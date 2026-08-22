@@ -30,7 +30,7 @@ public class NoteController {
 
 	private final NoteService noteService;
 
-	@PostMapping("/api/notes")
+	@PostMapping
 	public ResponseEntity<NoteResponse> createNote(@Valid @RequestBody NoteRequest request,
 			Authentication authentication) {
 
@@ -41,7 +41,7 @@ public class NoteController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(response);
 	}
 
-	@GetMapping("/api/notes")
+	@GetMapping
 	public ResponseEntity<List<NoteResponse>> getAllNotes(Authentication authentication) {
 
 		String email = authentication.getName();
