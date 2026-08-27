@@ -400,3 +400,32 @@
 
 ---
 
+
+### Day 16 – JMS (Asynchronous Messaging) & Redis Caching
+
+**Date:** 21ugust-2026
+
+📖 Topics Covered
+
+- **JMS (Java Message Service)**
+- **Asynchronous Messaging**
+- **Non-Blocking Background Processing**
+- **ActiveMQ Artemis**
+- **Redis Caching**
+- **JWT Token Caching**
+
+💻 Practical Work
+
+- Implemented **JMS-based asynchronous messaging** using **ActiveMQ Artemis**.
+- Implemented **Reminder and Notification** functionality using JMS.
+- Implemented **non-blocking background processing** for reminder notifications.
+- Implemented **JMS Producer and Consumer** for asynchronous message processing.
+- Implemented **Redis caching** for JWT authentication tokens.
+- Implemented **token expiration and caching** using Redis.
+- Integrated **Redis** with the authentication and authorization flow.
+- Tested the **JMS Reminder and Notification** flow with ActiveMQ Artemis.
+- Tested **JWT token caching and retrieval** using Redis.
+
+🔗 Code Link:
+
+- 📌 [Day-16](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-16)
