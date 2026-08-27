@@ -367,3 +367,36 @@
 
 
 ---
+
+
+### Day 15 – Organisation Modules: Pin, Archive, Trash, Search & Tags
+
+**Date:** 20-August-2026
+
+📖 Topics Covered
+
+- **Pin / Unpin Module**
+- **Archive / Unarchive Module**
+- **Trash / Restore Module**
+- **Search & Filter**
+- **Tags / Labels Management**
+- **State-Based Filtering**
+- **Organisation-Oriented REST Endpoints**
+
+💻 Practical Work
+
+- Implemented Pin and Unpin functionality for notes.
+- Implemented Archive and Unarchive functionality for notes.
+- Implemented Trash, Restore, and Permanent Delete functionality.
+- Implemented Search functionality for searching notes using keywords.
+- Implemented state-based filtering using Pinned, Archived, and Trashed states.
+- Implemented Tags / Labels management for organizing notes.
+- Implemented Many-to-Many relationship between Notes and Tags.
+- Designed and tested organisation-oriented REST endpoints for note management.
+
+🔗 Code Link:
+- 📌 [Day-15](https://github.com/akshaykumarsingh7323/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day-15)
+
+
+---
+
